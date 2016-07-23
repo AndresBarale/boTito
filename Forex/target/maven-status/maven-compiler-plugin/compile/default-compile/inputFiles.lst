@@ -1,0 +1,13 @@
+/home/andres/workspace_work_luna/Forex/src/main/java/com/botito/neural/activation/ActivationQuadraticSine.java
+/home/andres/workspace_work_luna/Forex/src/main/java/com/botito/monitor/BoTitoJob.java
+/home/andres/workspace_work_luna/Forex/src/main/java/com/botito/csv/ReadCSV.java
+/home/andres/workspace_work_luna/Forex/src/main/java/com/botito/run/RunBotito.java
+/home/andres/workspace_work_luna/Forex/src/main/java/com/botito/neural/activation/ActivationQuadraticConsine.java
+/home/andres/workspace_work_luna/Forex/src/main/java/com/botito/run/WriteOrder.java
+/home/andres/workspace_work_luna/Forex/src/main/java/com/botito/db/Connect.java
+/home/andres/workspace_work_luna/Forex/src/main/java/com/botito/neural/markov/MarkovProcess.java
+/home/andres/workspace_work_luna/Forex/src/main/java/com/botito/monitor/CronBoTito.java
+/home/andres/workspace_work_luna/Forex/src/main/java/com/botito/mail/SendEmail.java
+/home/andres/workspace_work_luna/Forex/src/main/java/com/botito/neural/propagation/RPROPForex.java
+/home/andres/workspace_work_luna/Forex/src/main/java/com/botito/neural/normalization/NormalizeExamples.java
+/home/andres/workspace_work_luna/Forex/src/main/java/com/botito/monitor/BoTitoPath.java

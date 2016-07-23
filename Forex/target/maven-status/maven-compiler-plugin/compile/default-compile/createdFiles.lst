@@ -1,0 +1,14 @@
+com/botito/csv/ReadCSV.class
+com/botito/mail/SendEmail.class
+com/botito/neural/propagation/RPROPForex.class
+com/botito/run/WriteOrder.class
+com/botito/mail/SendEmail$1.class
+com/botito/monitor/BoTitoPath.class
+com/botito/monitor/BoTitoJob.class
+com/botito/monitor/CronBoTito.class
+com/botito/neural/activation/ActivationQuadraticConsine.class
+com/botito/neural/activation/ActivationQuadraticSine.class
+com/botito/neural/markov/MarkovProcess.class
+com/botito/db/Connect.class
+com/botito/run/RunBotito.class
+com/botito/neural/normalization/NormalizeExamples.class
