@@ -8,9 +8,14 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
+import org.apache.log4j.Logger;
+
+
 public class ReadCSV {
 	private String idealString = "direction0";
 	private double[][] ideal = null;
+	private String[] days = {};
+	private final static Logger log = Logger.getLogger(ReadCSV.class);
 
 	public double[][] readCSV(String pathCSV) {
 	
@@ -19,14 +24,17 @@ public class ReadCSV {
 		String cvsSplitBy = ",";
 		List<Double> arrForex = new ArrayList<Double>();
 		List<Double> arrForexIdeal = new ArrayList<Double>();
+		List<String> daysLines = new ArrayList<String>();
 		double[][] forexMatrix = null;
 		try {
 			br = new BufferedReader(new FileReader(pathCSV));
 			int numLines = 0;
 			int numValues = 0;
 			int posIdeal = -1;
+			
 			if ((line = br.readLine()) != null) {
 				String[] forexValues = line.split(cvsSplitBy);
+				
 				numValues = forexValues.length;
 				for (int i = 1; i < forexValues.length; i++) {
 					if (forexValues[i].equals(idealString)) {
@@ -38,6 +46,7 @@ public class ReadCSV {
 			while ((line = br.readLine()) != null) {
 			    // use comma as separator	
 				String[] forexValues = line.split(cvsSplitBy);
+				daysLines.add(forexValues[0]);
 				for (int i = 1; i < forexValues.length; i++) {
 					if(i != posIdeal) {
 						arrForex.add(Double.parseDouble(forexValues[i]));
@@ -60,6 +69,12 @@ public class ReadCSV {
 				forexMatrix[numLinesFinal][i] = value;
 				i++;
 			}
+			int j = 0;
+			days = new String[numLines];
+			for(String day : daysLines) {
+				days[j] = day;
+				j++;
+			}
 			ideal = new double[numLines][1]; 
 			Iterator<Double> iterDoubleIdeal = arrForexIdeal.iterator();
 			int numLinesIdealFinal = 0;
@@ -71,14 +86,15 @@ public class ReadCSV {
 
 		} catch (FileNotFoundException e) {
 			//e.printStackTrace();
+			log.error(e);
 		} catch (IOException e) {
-			e.printStackTrace();
+			log.error(e);
 		} finally {
 			if (br != null) {
 				try {
 					br.close();
 				} catch (IOException e) {
-					e.printStackTrace();
+					log.error(e);
 				}
 			}
 		}           
@@ -101,4 +117,13 @@ public class ReadCSV {
 		this.idealString = idealString;
 	}
 
+	public String[] getDays() {
+		return days;
+	}
+
+	public void setDays(String[] days) {
+		this.days = days;
+	}
+	
+	
 }

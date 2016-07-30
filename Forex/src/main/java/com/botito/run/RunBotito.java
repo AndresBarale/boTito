@@ -4,12 +4,25 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.apache.log4j.Logger;
+import org.encog.Encog;
+
 import com.botito.neural.propagation.ForexNeural;
 
 public class RunBotito implements Runnable {
 	
 	private String pathCSV;
 	private static List<String> files = new ArrayList<String>();
+	private final static Logger log = Logger.getLogger(RunBotito.class);
+	
+	private static RunBotito instance = null;
+	
+	public static RunBotito getInstance() {
+		if (instance == null) {
+			instance = new RunBotito();
+		}
+		return instance;
+	}
 
 	public String getPathCSV() {
 		return pathCSV;
@@ -43,22 +56,35 @@ public class RunBotito implements Runnable {
 		if (!files.contains(file)) {
 			return;
 		}
+		
 		ForexNeural rprop = new ForexNeural();
+
 		try {
-			//rprop.thinkWithoutTry(this.pathCSV, file);
-			//rprop.think(this.pathCSV, file);
-			rprop.thinkWithoutTesterTry(this.pathCSV, file);
+			rprop.think(this.pathCSV, file);
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		try {
-			Thread.sleep(30000);
+			Thread.sleep(300);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
-			e.printStackTrace();
+			log.error(e);
 		}
 		files.remove(file);
+		if(files.size() == 0) {
+			File file1 = new File(this.pathCSV + file);
+			
+         // File (or directory) with new name
+         File file2 = new File(this.pathCSV + file + ".txt");
+
+         if (file2.exists())
+            file2.delete();
+
+         // Rename file (or directory)
+         file1.renameTo(file2);
+			Encog.getInstance().shutdown();
+		}
 	}
 	
 	public boolean isLockArchve(String file, String[] archives) {

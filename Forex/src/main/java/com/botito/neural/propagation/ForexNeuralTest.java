@@ -254,7 +254,7 @@ public class ForexNeuralTest {
 		//System.out.println(network.toString());
 		
 		WriteOrder writeOrder  =new WriteOrder();
-		writeOrder.writeOrder(pathCSV, file, buyOrSell);
+		//writeOrder.writeOrder(pathCSV, file, buyOrSell);
 			
 	}	
 	

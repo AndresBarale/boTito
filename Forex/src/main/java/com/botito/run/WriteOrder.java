@@ -3,24 +3,28 @@ package com.botito.run;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.PrintWriter;
-import java.util.Date;
 
 import org.apache.commons.io.FilenameUtils;
+import org.apache.log4j.Logger;
+
 
 public class WriteOrder {
 	
-	public void writeOrder(String path, String file, int buyOrSell) {
+	private final static Logger log = Logger.getLogger(WriteOrder.class);
+	
+	public void writeOrder(String path, String file, int buyOrSell, String day) {
 		File fileExist = null;
 		File fileExistLock = null;
 		FileWriter order = null;
 		FileWriter orderLock = null;
 		PrintWriter pw = null;
+
 		try {
-			fileExistLock = new File(path + FilenameUtils.removeExtension(file) + ".order.lock");
+			fileExistLock = new File(path + FilenameUtils.removeExtension(file) + "-" + day + ".order.lock");
 			if (!fileExistLock.exists()) {
 				fileExistLock.delete();
 			} else {
-				orderLock = new FileWriter(path + FilenameUtils.removeExtension(file) + ".order.lock");
+				orderLock = new FileWriter(path + FilenameUtils.removeExtension(file) + "-" + day + ".order.lock");
 				
 	            pw = new PrintWriter(orderLock);
 	            if (buyOrSell == 1) {
@@ -29,11 +33,11 @@ public class WriteOrder {
 	            	pw.println("Sell");
 	            }
 			}
-			fileExist = new File(path + FilenameUtils.removeExtension(file) + ".order");
+			fileExist = new File(path + FilenameUtils.removeExtension(file) + "-" + day + ".order");
 			if (fileExist.exists()) {
 				fileExist.delete();
 			}
-			order = new FileWriter(path + FilenameUtils.removeExtension(file) + ".order");
+			order = new FileWriter(path + FilenameUtils.removeExtension(file) + "-" + day + ".order");
 			
             pw = new PrintWriter(order);
             if (buyOrSell == 1) {
@@ -41,18 +45,9 @@ public class WriteOrder {
             } else {
             	pw.println("Sell");
             }
-            File file1 = new File(path + file);
 
-	         // File (or directory) with new name
-	         File file2 = new File(path + file + ".txt");
-	
-	         if (file2.exists())
-	            file2.delete();
-	
-	         // Rename file (or directory)
-	         file1.renameTo(file2);
         } catch (Exception e) {
-            e.printStackTrace();
+        	log.error(e);
         } finally {
 	        try {
 				if (null != order) {
@@ -64,7 +59,7 @@ public class WriteOrder {
 					file1.delete();
 				}
 	        } catch (Exception e2) {
-	        	e2.printStackTrace();
+	        	log.error(e2);
 			}
 		}
 	}

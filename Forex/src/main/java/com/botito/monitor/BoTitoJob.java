@@ -18,7 +18,7 @@ public class BoTitoJob implements Job {
 	public void execute(JobExecutionContext arg0) throws JobExecutionException {
 
         // do something
-    	RunBotito runBoTito = new RunBotito();
+    	RunBotito runBoTito = RunBotito.getInstance();
     	runBoTito.setPathCSV(BoTitoPath.getPath());
     	runBoTito.readFiles();
 
