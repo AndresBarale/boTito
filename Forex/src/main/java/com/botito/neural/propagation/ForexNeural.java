@@ -1,9 +1,6 @@
 package com.botito.neural.propagation;
 
-import java.io.File;
-
 import org.apache.log4j.Logger;
-import org.encog.engine.network.activation.ActivationSigmoid;
 import org.encog.ml.data.MLData;
 import org.encog.ml.data.MLDataPair;
 import org.encog.ml.data.MLDataSet;
@@ -24,20 +21,22 @@ import com.botito.run.WriteOrder;
 public class ForexNeural {
 	
 	private static int epochs = 5600;
-	private static double errorTrain = 0.00001;
+	private static double errorTrain = 0.000001;
 	private int hiddenNeurons = 70; // for stock market
-	private static int hiddenNeurons2 = -30;
-	private int lastTest = 30;
+	private  int hiddenNeurons2 = 0;
+	private int lastTest = 15;
 	private int lastTestLearn = 30;
 	private static double learningRate = 0.003;
-	private static double probe = 0.63;
+	private static double probe = 0.59;
 	private static int tryModel = 10;
 	private static String model = null;
-	private double toleranceError = 0.32;
-	private double toleranceErrorSell = 0.04;
+	private double toleranceErrorBuy = 0.0;
+	private double toleranceErrorSell = 1.00;
 	private double toleranceErrorLearn = 0.17;
 	private Propagation trainNet;
 	private BasicNetwork networkLearn;
+	private int asserts = 20;
+	private double assertsProb;
 	private final static Logger log = Logger.getLogger(ForexNeural.class);
 	
 	public void learn(String pathCSV, String file) throws Exception {	
@@ -162,7 +161,7 @@ public class ForexNeural {
 				lastTestTrain--;
 				//log.info(network.toString());
 			} while(lastTestTrain > lastTest);
-			if(i > 0 && ((double)assertPrediction/(double)i) > probe) {
+			if(i > 0 && ((double)assertPrediction/(double)i) > probe && assertPrediction >= asserts) {
 				log.info("********************************************************");
 				log.info("Learn!!! Archive: " + file  + " prob: " + 
 							(double)((double)assertPrediction/(double)i)*100  + 
@@ -170,6 +169,7 @@ public class ForexNeural {
 							" Gross win: " + openTotalWin +
 							" Gross lose: " + openTotalLose +
 							" cant: " + assertPrediction + " " + i );
+				
 				log.info("********************************************************" + mh4);
 				trainNet = train;
 				networkLearn = network;
@@ -181,7 +181,7 @@ public class ForexNeural {
 	}
 
 	
-	public void think(String pathCSV, String file) throws Exception {
+	public void think(String pathCSV, String file, boolean write) throws Exception {
 		int buyOrSell = -1;
 		int i = 0;
 		int assertPrediction = 0;
@@ -189,9 +189,10 @@ public class ForexNeural {
 		double openTotalWin = 0;
 		double openTotalLose = 0;
 		int mh4 = 0;
+		int last = lastTest;
 		do {
 			//readCSV
-			log.error("Dia: "+ lastTest + " Archive: " + file + " Started.");
+			log.error("Dia: "+ last + " Archive: " + file + " Started.");
 			long time = System.currentTimeMillis();
 			ReadCSV readCSV = new ReadCSV();
 			double[][] data = readCSV.readCSV(pathCSV + file);
@@ -203,16 +204,16 @@ public class ForexNeural {
 			NormalizeExamples norm  = new NormalizeExamples(data);
 			double[][] ideal = readCSV.getIdeal();
 			double[][] dataNormalized = norm.getNormalized();
-			double[][] dataTrain = new double[data.length - lastTest][data[0].length]; 
-			double[][] idealTrain = new double[data.length - lastTest][1]; 
-			double[][] dataTest = new double[lastTest][data[0].length]; 
-			double[][] idealTest = new double[lastTest][1];
+			double[][] dataTrain = new double[data.length - last][data[0].length]; 
+			double[][] idealTrain = new double[data.length - last][1]; 
+			double[][] dataTest = new double[last][data[0].length]; 
+			double[][] idealTest = new double[last][1];
 			double[][] idealTestOne = new double[1][1];
 			double[][] dataTestOne = new double[1][data[0].length]; 
 			double close = 0;
-			double open = data[data.length - lastTest][3];
-			if	(lastTest > 1) {
-				close = data[data.length - lastTest + 1][8];
+			double open = data[data.length - last][3];
+			if	(last > 1) {
+				close = data[data.length - last + 1][8];
 			}
 			//double[][] dataDeNormalized = norm.getDeNormalized();
 			createArraysTester(
@@ -222,21 +223,20 @@ public class ForexNeural {
 					idealTrain,
 					dataTest,
 					ideal,
-					idealTest, lastTest);
+					idealTest, last);
 			//idealTestMinusOne[0][0] = null;
 			//idealTestMinusOne[0][0] = ideal4h[mh4];
 			
-			trainNet = null;
-			learn(pathCSV,file);
+			
 			if (trainNet != null) {
 				Propagation train = trainNet;
 				BasicNetwork network = networkLearn;
 				
-				log.info("Dia: "+ lastTest + 
+				log.info("Dia: "+ last + 
 						 " Archive: " + file  +" Error:" + train.getError() + " Segs: " + (double)(System.currentTimeMillis() - time) / 1000);
 				
 				
-				dataTestOne[0] = dataTest[dataTest.length - lastTest];
+				dataTestOne[0] = dataTest[dataTest.length - last];
 				
 				MLDataSet trainingSet2 = new BasicMLDataSet(dataTestOne,idealTestOne);
 				String actual1 = "";
@@ -251,33 +251,32 @@ public class ForexNeural {
 				}
 				buyOrSell = Integer.parseInt(actual1);
 				e1 = network.calculateError(trainingSet2);
-				String idealTrainTest = "" + Math.round(idealTest[idealTest.length - lastTest][0]);
-				if ((e1 > toleranceError && buyOrSell == 1) ||	(e1 < toleranceErrorSell && buyOrSell == 0)) {
+				String idealTrainTest = "" + Math.round(idealTest[idealTest.length - last][0]);
+				if ((e1 > toleranceErrorBuy && buyOrSell == 1) ||	(e1 < toleranceErrorSell && buyOrSell == 0)) {
 					i++;
 				
 					 
-					log.info("Dia: "+ lastTest + " Archive: " + file  +" prediction: " + actual1 +  " actual: " + idealTrainTest);
-					if (idealTrainTest.equals(actual1) && lastTest > 1) {
+					log.info("Dia: "+ last + " Archive: " + file  +" prediction: " + actual1 +  " actual: " + idealTrainTest);
+					if (idealTrainTest.equals(actual1) && last > 1) {
 						assertPrediction++;
 						openTotalWin += Math.abs(close - open); 
 					} else {
 						openTotalLose += Math.abs(close - open); 
 					}
 					
-					log.info("Dia: "+ lastTest + " Archive: " + file  + "  Network traiined to error: " + e1 );
-					if (buyOrSell != -1) {
+					log.info("Dia: "+ last + " Archive: " + file  + "  Network traiined to error: " + e1 );
+					if (buyOrSell != -1 && write) {
 						WriteOrder writeOrder  = new WriteOrder();
-						writeOrder.writeOrder(pathCSV, file, buyOrSell, readCSV.getDays()[readCSV.getDays().length-lastTest]);
+						writeOrder.writeOrder(pathCSV, file, buyOrSell, readCSV.getDays()[readCSV.getDays().length-last]);
 					}	
-					//EncogUtility.evaluate(network, trainingSet2);
-					//Encog.getInstance().shutdown();
+					
 				} else {
-					log.info("Dia: "+ lastTest + " Archive: " + file  + " Try to predict: " + actual1 + " " + idealTrainTest + " discarded by error " + e1);
+					log.info("Dia: "+ last + " Archive: " + file  + " Try to predict: " + actual1 + " " + idealTrainTest + " discarded by error " + e1);
 				}
 			}
-			lastTest--;
+			last--;
 			//log.info(network.toString());
-		} while(lastTest > 0);
+		} while(last > 0);
 		if(i > 0) {
 			log.info("********************************************************");
 			log.info("Archive: " + file  + " prob: " + 
@@ -286,12 +285,26 @@ public class ForexNeural {
 						" Gross win: " + openTotalWin +
 						" Gross lose: " + openTotalLose +
 						" cant: " + assertPrediction + " " + i );
+						assertsProb = (double)((double)assertPrediction/(double)i);
 			log.info("********************************************************" + mh4);
+			
+			
 		}
 		
 			
 	}	
 	
+	public void thinkSmart(String pathCSV, String file) throws Exception {
+		for (int i = 0; i < 30; i++) {
+			trainNet = null;
+			learn(pathCSV,file);
+			think(pathCSV,file, false);
+			if (assertsProb > probe) {
+				think(pathCSV,file, true);
+				return;
+			}
+		}
+	}
 	
 	private void createArraysTester(
 			double[][] data,
@@ -386,19 +399,44 @@ public class ForexNeural {
 	}
 
 
-	public double getToleranceError() {
-		return toleranceError;
+	public int getHiddenNeurons2() {
+		return hiddenNeurons2;
 	}
 
 
-	public void setToleranceError(double toleranceError) {
-		this.toleranceError = toleranceError;
+	public void setHiddenNeurons2(int hiddenNeurons2) {
+		this.hiddenNeurons2 = hiddenNeurons2;
 	}
-	
-	
-	
-	
-	
-	
+
+
+	public double getToleranceErrorBuy() {
+		return toleranceErrorBuy;
+	}
+
+
+	public void setToleranceErrorBuy(double toleranceErrorBuy) {
+		this.toleranceErrorBuy = toleranceErrorBuy;
+	}
+
+
+	public double getToleranceErrorSell() {
+		return toleranceErrorSell;
+	}
+
+
+	public void setToleranceErrorSell(double toleranceErrorSell) {
+		this.toleranceErrorSell = toleranceErrorSell;
+	}
+
+
+	public double getToleranceErrorLearn() {
+		return toleranceErrorLearn;
+	}
+
+
+	public void setToleranceErrorLearn(double toleranceErrorLearn) {
+		this.toleranceErrorLearn = toleranceErrorLearn;
+	}
+
 
 }
