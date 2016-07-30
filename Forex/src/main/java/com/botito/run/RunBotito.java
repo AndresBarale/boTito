@@ -75,15 +75,15 @@ public class RunBotito implements Runnable {
 		if(files.size() == 0) {
 			File file1 = new File(this.pathCSV + file);
 			
-         // File (or directory) with new name
-         File file2 = new File(this.pathCSV + file + ".txt");
-
-         if (file2.exists())
-            file2.delete();
-
-         // Rename file (or directory)
-         file1.renameTo(file2);
-			Encog.getInstance().shutdown();
+	        // File (or directory) with new name
+	        File file2 = new File(this.pathCSV + file + ".txt");
+	
+	        if (file2.exists())
+	           file2.delete();
+	
+	        // Rename file (or directory)
+	        file1.renameTo(file2);
+	        Encog.getInstance().shutdown();
 		}
 	}
 	
