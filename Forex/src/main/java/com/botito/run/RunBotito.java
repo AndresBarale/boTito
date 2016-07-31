@@ -42,6 +42,9 @@ public class RunBotito implements Runnable {
 	public void readFiles() {
 		File dir = new File(pathCSV);
 		String[] archives = dir.list();
+		if(files.size() == 0) {    
+	        isReadingFiles = false;
+		}
 		if (isReadingFiles) {
 			return;
 		}
@@ -125,12 +128,14 @@ public class RunBotito implements Runnable {
 		    String toleranceErrorLearn = propiedades.getProperty("toleranceErrorLearn");
 		    String toleranceErrorSell = propiedades.getProperty("toleranceErrorSell");
 		    String lastTest = propiedades.getProperty("lastTest");
+		    String probe = propiedades.getProperty("probe");
 
 		    rprop.setHiddenNeurons2(Integer.parseInt(hiddenNeurons2));
 		    rprop.setLastTest(Integer.parseInt(lastTest));
 		    rprop.setToleranceErrorBuy(Double.parseDouble(toleranceErrorBuy));
 		    rprop.setToleranceErrorLearn(Double.parseDouble(toleranceErrorLearn));
 		    rprop.setToleranceErrorSell(Double.parseDouble(toleranceErrorSell));
+		    rprop.setProbe(Double.parseDouble(probe));
 	    
 	   } catch (FileNotFoundException e) {
 		  log.error("File propieties not exist.");
