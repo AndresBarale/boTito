@@ -12,7 +12,7 @@ public class WriteOrder {
 	
 	private final static Logger log = Logger.getLogger(WriteOrder.class);
 	
-	public void writeOrder(String path, String file, int buyOrSell, String day) {
+	public void writeOrder(String path, String file, int buyOrSell) {
 		File fileExist = null;
 		File fileExistLock = null;
 		FileWriter order = null;
@@ -20,11 +20,11 @@ public class WriteOrder {
 		PrintWriter pw = null;
 
 		try {
-			fileExistLock = new File(path + FilenameUtils.removeExtension(file) + "-" + day + ".order.lock");
+			fileExistLock = new File(".lock");
 			if (!fileExistLock.exists()) {
 				fileExistLock.delete();
 			} else {
-				orderLock = new FileWriter(path + FilenameUtils.removeExtension(file) + "-" + day + ".order.lock");
+				orderLock = new FileWriter(path + FilenameUtils.removeExtension(file)  + ".order.lock");
 				
 	            pw = new PrintWriter(orderLock);
 	            if (buyOrSell == 1) {
@@ -33,11 +33,11 @@ public class WriteOrder {
 	            	pw.println("Sell");
 	            }
 			}
-			fileExist = new File(path + FilenameUtils.removeExtension(file) + "-" + day + ".order");
+			fileExist = new File(path + FilenameUtils.removeExtension(file) + ".order");
 			if (fileExist.exists()) {
 				fileExist.delete();
 			}
-			order = new FileWriter(path + FilenameUtils.removeExtension(file) + "-" + day + ".order");
+			order = new FileWriter(path + FilenameUtils.removeExtension(file)  + ".order");
 			
             pw = new PrintWriter(order);
             if (buyOrSell == 1) {

@@ -35,7 +35,7 @@ public class ForexNeural {
 	private double toleranceErrorLearn = 0.17;
 	private Propagation trainNet;
 	private BasicNetwork networkLearn;
-	private int asserts = 20;
+	//private int asserts = 20;
 	private double assertsProb;
 	private final static Logger log = Logger.getLogger(ForexNeural.class);
 	
@@ -161,7 +161,7 @@ public class ForexNeural {
 				lastTestTrain--;
 				//log.info(network.toString());
 			} while(lastTestTrain > lastTest);
-			if(i > 0 && ((double)assertPrediction/(double)i) > probe && assertPrediction >= asserts) {
+			if(i > 0 && ((double)assertPrediction/(double)i) > probe) {
 				log.info("********************************************************");
 				log.info("Learn!!! Archive: " + file  + " prob: " + 
 							(double)((double)assertPrediction/(double)i)*100  + 
@@ -253,21 +253,23 @@ public class ForexNeural {
 				e1 = network.calculateError(trainingSet2);
 				String idealTrainTest = "" + Math.round(idealTest[idealTest.length - last][0]);
 				if ((e1 > toleranceErrorBuy && buyOrSell == 1) ||	(e1 < toleranceErrorSell && buyOrSell == 0)) {
-					i++;
+					
 				
 					 
 					log.info("Dia: "+ last + " Archive: " + file  +" prediction: " + actual1 +  " actual: " + idealTrainTest);
 					if (idealTrainTest.equals(actual1) && last > 1) {
 						assertPrediction++;
 						openTotalWin += Math.abs(close - open); 
-					} else {
+						i++;
+					} else if (last > 1){
 						openTotalLose += Math.abs(close - open); 
+						i++;
 					}
 					
 					log.info("Dia: "+ last + " Archive: " + file  + "  Network traiined to error: " + e1 );
-					if (buyOrSell != -1 && write) {
+					if (buyOrSell != -1 && write && last == 1) {
 						WriteOrder writeOrder  = new WriteOrder();
-						writeOrder.writeOrder(pathCSV, file, buyOrSell, readCSV.getDays()[readCSV.getDays().length-last]);
+						writeOrder.writeOrder(pathCSV, file, buyOrSell);
 					}	
 					
 				} else {
@@ -295,7 +297,7 @@ public class ForexNeural {
 	}	
 	
 	public void thinkSmart(String pathCSV, String file) throws Exception {
-		for (int i = 0; i < 30; i++) {
+		for (int i = 0; i < 50; i++) {
 			trainNet = null;
 			learn(pathCSV,file);
 			think(pathCSV,file, false);
@@ -439,4 +441,14 @@ public class ForexNeural {
 	}
 
 
+	public int getLastTestLearn() {
+		return lastTestLearn;
+	}
+
+
+	public void setLastTestLearn(int lastTestLearn) {
+		this.lastTestLearn = lastTestLearn;
+	}
+
+    
 }

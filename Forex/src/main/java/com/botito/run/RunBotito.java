@@ -18,11 +18,8 @@ public class RunBotito implements Runnable {
 	
 	private String pathCSV;
 	private static List<String> files = new ArrayList<String>();
-	private final static Logger log = Logger.getLogger(RunBotito.class);
-	
-	private boolean isReadingFiles = false;
-	
-	private static RunBotito instance = null;
+	private final static Logger log = Logger.getLogger(ForexNeural.class);
+	private static RunBotito instance =  null;
 	
 	public static RunBotito getInstance() {
 		if (instance == null) {
@@ -42,20 +39,14 @@ public class RunBotito implements Runnable {
 	public void readFiles() {
 		File dir = new File(pathCSV);
 		String[] archives = dir.list();
-		if(files.size() == 0) {    
-	        isReadingFiles = false;
-		}
-		if (isReadingFiles) {
-			return;
-		}
-		isReadingFiles = true;
+		log.info("Reading files...");
 		if (archives == null && !dir.exists() && !dir.isDirectory()) {
 		    System.out.println("is not a directory");
 		} else { 
 			for (int i = 0; i < archives.length; i++) {
 				if (archives[i].endsWith(".csv") && !isLockArchve(archives[i],archives)) {
 					if (!files.contains(archives[i])) {
-						files.add(archives[i]);
+						files.add(archives[i]);	  
 						run();
 					}
 				}
@@ -71,19 +62,26 @@ public class RunBotito implements Runnable {
 			return;
 		}
 		
+		File file3 = new File(this.pathCSV + file);
+		if (!file3.exists()) {
+			return;
+		}
+		
 		ForexNeural rprop = new ForexNeural();
-		setProperties(this.pathCSV, file, rprop);
 		try {
+			setProperties(this.pathCSV, file ,rprop);
 			rprop.thinkSmart(this.pathCSV, file);
 		} catch (Exception e) {
-			log.error(e);
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 		}
 		try {
 			Thread.sleep(300);
 		} catch (InterruptedException e) {
-			log.error(e);
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 		}
-				
+		
 		File file1 = new File(this.pathCSV + file);
 		
         // File (or directory) with new name
@@ -94,12 +92,33 @@ public class RunBotito implements Runnable {
 
         // Rename file (or directory)
         file1.renameTo(file2);
-        
-        files.remove(file);
-	    if(files.size() == 0) {    
-	        Encog.getInstance().shutdown();
-	        isReadingFiles = false;
+		
+		if (!files.remove(file)) {
+			
 		}
+		if (existFiles()) {
+			Encog.getInstance().shutdown();
+			files = new ArrayList<String>();
+			log.info("+++++++++++++++++++++++++++++++++++");
+			log.info("Shutdown Encog.");
+			log.info("+++++++++++++++++++++++++++++++++++");
+		}
+	}
+	
+	private boolean existFiles() {
+		File dir = new File(pathCSV);
+		String[] archives = dir.list();
+		boolean exists = true;
+		if (archives == null && !dir.exists() && !dir.isDirectory()) {
+		    System.out.println("is not a directory");
+		} else { 
+			for (int i = 0; i < archives.length; i++) {
+				if (archives[i].endsWith(".csv") && !isLockArchve(archives[i],archives)) {
+					exists = false;
+				}
+			 }
+		}
+		return exists;
 	}
 	
 	public boolean isLockArchve(String file, String[] archives) {
@@ -116,7 +135,8 @@ public class RunBotito implements Runnable {
 	private void setProperties(String path, String file, ForexNeural rprop) {
 		try {
 		   
-			String filePropeties = FilenameUtils.removeExtension(file) + ".properties";
+			String filePropeties = FilenameUtils.removeExtension(file);
+			filePropeties = filePropeties.split("-")[0] + "-" + filePropeties.split("-")[1] + ".properties" ;
 		    Properties propiedades = new Properties();
 		    
 		    propiedades
@@ -128,10 +148,12 @@ public class RunBotito implements Runnable {
 		    String toleranceErrorLearn = propiedades.getProperty("toleranceErrorLearn");
 		    String toleranceErrorSell = propiedades.getProperty("toleranceErrorSell");
 		    String lastTest = propiedades.getProperty("lastTest");
+		    String lastTestLearn = propiedades.getProperty("lastTestLearn");
 		    String probe = propiedades.getProperty("probe");
 
 		    rprop.setHiddenNeurons2(Integer.parseInt(hiddenNeurons2));
 		    rprop.setLastTest(Integer.parseInt(lastTest));
+		    rprop.setLastTestLearn(Integer.parseInt(lastTestLearn));
 		    rprop.setToleranceErrorBuy(Double.parseDouble(toleranceErrorBuy));
 		    rprop.setToleranceErrorLearn(Double.parseDouble(toleranceErrorLearn));
 		    rprop.setToleranceErrorSell(Double.parseDouble(toleranceErrorSell));
@@ -143,5 +165,6 @@ public class RunBotito implements Runnable {
 		   log.error("File propieties can't read.");
 	   }
 	}
+		
 
 }
