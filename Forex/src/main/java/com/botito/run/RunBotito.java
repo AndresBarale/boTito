@@ -5,6 +5,7 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 import java.util.Properties;
 
@@ -39,7 +40,7 @@ public class RunBotito implements Runnable {
 	public void readFiles() {
 		File dir = new File(pathCSV);
 		String[] archives = dir.list();
-		log.info("Reading files...");
+		log.info("Date: " + new Date(System.currentTimeMillis()).toString() +  " Reading files...");
 		if (archives == null && !dir.exists() && !dir.isDirectory()) {
 		    System.out.println("is not a directory");
 		} else { 
@@ -61,15 +62,18 @@ public class RunBotito implements Runnable {
 		if (!files.contains(file)) {
 			return;
 		}
-		
+		log.info("Processing file: " + file);
 		File file3 = new File(this.pathCSV + file);
 		if (!file3.exists()) {
+			log.info("File not exist: " + file);
+			files.remove(file);
 			return;
 		}
 		
 		ForexNeural rprop = new ForexNeural();
 		try {
 			setProperties(this.pathCSV, file ,rprop);
+			log.info("Thinking file: " + file);
 			rprop.thinkSmart(this.pathCSV, file);
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
@@ -94,7 +98,7 @@ public class RunBotito implements Runnable {
         file1.renameTo(file2);
 		
 		if (!files.remove(file)) {
-			
+			log.info("Cant remove: " + file);
 		}
 		if (existFiles()) {
 			Encog.getInstance().shutdown();
@@ -113,7 +117,7 @@ public class RunBotito implements Runnable {
 		    System.out.println("is not a directory");
 		} else { 
 			for (int i = 0; i < archives.length; i++) {
-				if (archives[i].endsWith(".csv") && !isLockArchve(archives[i],archives)) {
+				if (archives[i].endsWith(".csv")) {
 					exists = false;
 				}
 			 }
@@ -124,7 +128,7 @@ public class RunBotito implements Runnable {
 	public boolean isLockArchve(String file, String[] archives) {
 		boolean ret = false;
 		for (int j = 0; j < archives.length; j++) {
-			if (archives[j].endsWith(".lock") && archives[j].startsWith(file.split(".")[0])) {
+			if (archives[j].endsWith(".lock")) {
 				return true;
 			}
 		}
@@ -160,7 +164,7 @@ public class RunBotito implements Runnable {
 		    rprop.setProbe(Double.parseDouble(probe));
 	    
 	   } catch (FileNotFoundException e) {
-		  log.error("File propieties not exist.");
+		   log.error("File propieties not exist.");
 	   } catch (IOException e) {
 		   log.error("File propieties can't read.");
 	   }

@@ -28,7 +28,7 @@ public class CronBoTito {
 			.newTrigger()
 			.withIdentity("dummyTriggerName", "group1")
 			.withSchedule(
-				CronScheduleBuilder.cronSchedule("0/5 * * * * ?"))
+				CronScheduleBuilder.cronSchedule("0/10 * * * * ?"))
 			.build();
 	    	
 	    	//schedule it
