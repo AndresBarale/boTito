@@ -252,7 +252,7 @@ public class ForexNeural {
 				buyOrSell = Integer.parseInt(actual1);
 				e1 = network.calculateError(trainingSet2);
 				String idealTrainTest = "" + Math.round(idealTest[idealTest.length - last][0]);
-				if ((e1 > toleranceErrorBuy && buyOrSell == 1) ||	(e1 < toleranceErrorSell && buyOrSell == 0)) {
+				//if ((e1 > toleranceErrorBuy && buyOrSell == 1) ||	(e1 < toleranceErrorSell && buyOrSell == 0)) {
 					
 				
 					 
@@ -268,13 +268,17 @@ public class ForexNeural {
 					
 					log.info("Dia: "+ last + " Archive: " + file  + "  Network traiined to error: " + e1 );
 					if (buyOrSell != -1 && write && last == 1) {
-						WriteOrder writeOrder  = new WriteOrder();
-						writeOrder.writeOrder(pathCSV, file, buyOrSell);
+						if ((e1 < toleranceErrorBuy && buyOrSell == 1) ||	(e1 < toleranceErrorSell && buyOrSell == 0)) {
+							WriteOrder writeOrder  = new WriteOrder();
+							writeOrder.writeOrder(pathCSV, file, buyOrSell);
+						} else {
+							log.info("Order discarded by error: " + e1);
+						}
 					}	
 					
-				} else {
-					log.info("Dia: "+ last + " Archive: " + file  + " Try to predict: " + actual1 + " " + idealTrainTest + " discarded by error " + e1);
-				}
+//				} else {
+//					log.info("Dia: "+ last + " Archive: " + file  + " Try to predict: " + actual1 + " " + idealTrainTest + " discarded by error " + e1);
+//				}
 			}
 			last--;
 			//log.info(network.toString());
