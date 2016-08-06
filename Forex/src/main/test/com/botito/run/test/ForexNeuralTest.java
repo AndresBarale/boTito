@@ -3,6 +3,8 @@ package com.botito.run.test;
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
+import java.util.ArrayList;
+import java.util.List;
 
 import org.apache.log4j.Logger;
 import org.encog.ml.data.MLData;
@@ -46,7 +48,9 @@ public class ForexNeuralTest {
 	private int countWrite;
 	private double openTotalWinWrite;
 	private double loseTotalWrite;
+	private int layers = 1;
 	private final static Logger log = Logger.getLogger(ForexNeural.class);
+	private List<Integer> layerNeurons = new ArrayList<Integer>();
 	
 	public void learn(String pathCSV, String file, int testDaysAgo) throws Exception {	
 		int i = 0;
@@ -103,7 +107,13 @@ public class ForexNeuralTest {
 			BasicNetwork network = new BasicNetwork();
 			hiddenNeurons = Math.round(data[0].length/2) + 1;
 			network.addLayer(new BasicLayer(new ActivationQuadraticSine(),true,data[0].length));
-			network.addLayer(new BasicLayer(new ActivationQuadraticSine(),true,hiddenNeurons + hiddenNeurons2));
+			if (layerNeurons.size() == 0) {
+				network.addLayer(new BasicLayer(new ActivationQuadraticSine(),true,hiddenNeurons + hiddenNeurons2));
+			}else{
+				for (Integer hidden : layerNeurons) {
+					network.addLayer(new BasicLayer(new ActivationQuadraticSine(),true,hiddenNeurons + hidden.intValue()));
+				}
+			}
 			//network.addLayer(new BasicLayer(new ActivationQuadraticSine(),true,hiddenNeurons2));
 			network.addLayer(new BasicLayer(new ActivationQuadraticSine(),true,1));
 			network.getStructure().finalizeStructure();
@@ -307,7 +317,7 @@ public class ForexNeuralTest {
 						" Gross lose: " + openTotalLose +
 						" cant: " + assertPrediction + " " + i );
 						assertsProb = (double)((double)assertPrediction/(double)i);
-			log.info("********************************************************" + mh4);
+			//log.info("********************************************************" );
 			
 			
 		}
@@ -322,6 +332,9 @@ public class ForexNeuralTest {
 				trainNet = null;
 				learn(pathCSV,file, j);
 				think(pathCSV,file, false, j);
+				//log.info("**************");
+				log.info("Try model: " + (i + 1));
+				log.info("**************");
 				if (assertsProb > probe) {
 					think(pathCSV,file, true, j);
 					break;
@@ -524,5 +537,16 @@ public class ForexNeuralTest {
 		ForexNeuralTest.probeTrain = probeTrain;
 	}
 
+
+	public List<Integer> getLayerNeurons() {
+		return layerNeurons;
+	}
+
+
+	public void setLayerNeurons(List<Integer> layerNeurons) {
+		this.layerNeurons = layerNeurons;
+	}
+
+	
     
 }

@@ -1,5 +1,8 @@
 package com.botito.neural.propagation;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import org.apache.log4j.Logger;
 import org.encog.ml.data.MLData;
 import org.encog.ml.data.MLDataPair;
@@ -36,6 +39,7 @@ public class ForexNeural {
 	private double toleranceErrorLearn = 0.17;
 	private Propagation trainNet;
 	private BasicNetwork networkLearn;
+	private List<Integer> layerNeurons = new ArrayList<Integer>();
 	//private int asserts = 20;
 	private double assertsProb;
 	private final static Logger log = Logger.getLogger(ForexNeural.class);
@@ -95,8 +99,13 @@ public class ForexNeural {
 			BasicNetwork network = new BasicNetwork();
 			hiddenNeurons = Math.round(data[0].length/2) + 1;
 			network.addLayer(new BasicLayer(new ActivationQuadraticSine(),true,data[0].length));
-			network.addLayer(new BasicLayer(new ActivationQuadraticSine(),true,hiddenNeurons + hiddenNeurons2));
-			//network.addLayer(new BasicLayer(new ActivationQuadraticSine(),true,hiddenNeurons2));
+			if (layerNeurons.size() == 0) {
+				network.addLayer(new BasicLayer(new ActivationQuadraticSine(),true,hiddenNeurons + hiddenNeurons2));
+			} else {
+				for (Integer hidden : layerNeurons) {
+					network.addLayer(new BasicLayer(new ActivationQuadraticSine(),true,hiddenNeurons + hidden.intValue()));
+				}
+			}	
 			network.addLayer(new BasicLayer(new ActivationQuadraticSine(),true,1));
 			network.getStructure().finalizeStructure();
 			network.reset();
@@ -457,6 +466,15 @@ public class ForexNeural {
 
 	public void setProbeTrain(double probeTrain) {
 		ForexNeural.probeTrain = probeTrain;
+	}
+	
+	public List<Integer> getLayerNeurons() {
+		return layerNeurons;
+	}
+
+
+	public void setLayerNeurons(List<Integer> layerNeurons) {
+		this.layerNeurons = layerNeurons;
 	}
 
     

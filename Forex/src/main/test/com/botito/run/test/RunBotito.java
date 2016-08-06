@@ -155,7 +155,12 @@ public class RunBotito  implements Runnable  {
 		    String lastTestLearn = propiedades.getProperty("lastTestLearn");
 		    String probe = propiedades.getProperty("probe");
 		    String probeTrain =  propiedades.getProperty("probeTrain");
-
+		    String hiddens = propiedades.getProperty("hiddens");	
+		    List<Integer> hiddenLayerNeurons = new ArrayList<Integer>();
+		    for (int i = 0;i < hiddens.split(",").length; i++) {
+		    	hiddenLayerNeurons.add(Integer.parseInt(hiddens.split(",")[i]));
+		    }
+		    
 		    rprop.setHiddenNeurons2(Integer.parseInt(hiddenNeurons2));
 		    rprop.setLastTest(Integer.parseInt(lastTest));
 		    rprop.setLastTestLearn(Integer.parseInt(lastTestLearn));
@@ -164,6 +169,8 @@ public class RunBotito  implements Runnable  {
 		    rprop.setToleranceErrorSell(Double.parseDouble(toleranceErrorSell));
 		    rprop.setProbe(Double.parseDouble(probe));
 		    rprop.setProbeTrain(Double.parseDouble(probeTrain));
+		    rprop.setLayerNeurons(hiddenLayerNeurons);
+		    
 	    
 	   } catch (FileNotFoundException e) {
 		   log.error("File propieties not exist.");
