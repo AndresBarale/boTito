@@ -1,4 +1,4 @@
-package com.botito.run;
+package com.botito.run.test;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -15,7 +15,7 @@ import org.encog.Encog;
 
 import com.botito.neural.propagation.ForexNeural;
 
-public class RunBotito implements Runnable {
+public class RunBotito  implements Runnable  {
 	
 	private String pathCSV;
 	private static List<String> files = new ArrayList<String>();
@@ -70,7 +70,7 @@ public class RunBotito implements Runnable {
 			return;
 		}
 		
-		ForexNeural rprop = new ForexNeural();
+		ForexNeuralTest rprop = new ForexNeuralTest();
 		try {
 			setProperties(this.pathCSV, file ,rprop);
 			log.info("Thinking file: " + file);
@@ -136,7 +136,7 @@ public class RunBotito implements Runnable {
 	}
 	
 
-	private void setProperties(String path, String file, ForexNeural rprop) {
+	private void setProperties(String path, String file, ForexNeuralTest rprop) {
 		try {
 		   
 			String filePropeties = FilenameUtils.removeExtension(file);
@@ -171,6 +171,8 @@ public class RunBotito implements Runnable {
 		   log.error("File propieties can't read.");
 	   }
 	}
+	
+
 		
 
 }

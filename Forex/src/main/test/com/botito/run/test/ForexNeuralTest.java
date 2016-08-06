@@ -1,4 +1,8 @@
-package com.botito.neural.propagation;
+package com.botito.run.test;
+
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileWriter;
 
 import org.apache.log4j.Logger;
 import org.encog.ml.data.MLData;
@@ -15,10 +19,10 @@ import org.encog.util.simple.EncogUtility;
 import com.botito.csv.ReadCSV;
 import com.botito.neural.activation.ActivationQuadraticSine;
 import com.botito.neural.normalization.NormalizeExamples;
-import com.botito.run.WriteOrder;
+import com.botito.neural.propagation.ForexNeural;
 
 
-public class ForexNeural {
+public class ForexNeuralTest {
 	
 	private static int epochs = 5600;
 	private static double errorTrain = 0.000001;
@@ -38,9 +42,13 @@ public class ForexNeural {
 	private BasicNetwork networkLearn;
 	//private int asserts = 20;
 	private double assertsProb;
+	private int assertsProbWrite;
+	private int countWrite;
+	private double openTotalWinWrite;
+	private double loseTotalWrite;
 	private final static Logger log = Logger.getLogger(ForexNeural.class);
 	
-	public void learn(String pathCSV, String file) throws Exception {	
+	public void learn(String pathCSV, String file, int testDaysAgo) throws Exception {	
 		int i = 0;
 		int assertPrediction = 0;
 		double e1 = 100;
@@ -52,7 +60,7 @@ public class ForexNeural {
 		
 		do {
 			
-			int lastTestTrain = lastTest + lastTestLearn;
+			int lastTestTrain = lastTest + lastTestLearn + testDaysAgo;
 			log.debug("Learn!!! Dia: "+ lastTestTrain + " Archive: " + file + " Started.");
 			long time = System.currentTimeMillis();
 			ReadCSV readCSV = new ReadCSV();
@@ -161,7 +169,7 @@ public class ForexNeural {
 				
 				lastTestTrain--;
 				//log.info(network.toString());
-			} while(lastTestTrain > lastTest);
+			} while(lastTestTrain > lastTest + testDaysAgo);
 			if(i > 0 && ((double)assertPrediction/(double)i) > probeTrain) {
 				log.info("********************************************************");
 				log.info("Learn!!! Archive: " + file  + " prob: " + 
@@ -170,7 +178,7 @@ public class ForexNeural {
 							" Gross win: " + openTotalWin +
 							" Gross lose: " + openTotalLose +
 							" cant: " + assertPrediction + " " + i );
-				
+							
 				log.info("********************************************************" + mh4);
 				trainNet = train;
 				networkLearn = network;
@@ -182,7 +190,7 @@ public class ForexNeural {
 	}
 
 	
-	public void think(String pathCSV, String file, boolean write) throws Exception {
+	public void think(String pathCSV, String file, boolean write, int testDaysAgo) throws Exception {
 		int buyOrSell = -1;
 		int i = 0;
 		int assertPrediction = 0;
@@ -190,7 +198,7 @@ public class ForexNeural {
 		double openTotalWin = 0;
 		double openTotalLose = 0;
 		int mh4 = 0;
-		int last = lastTest;
+		int last = lastTest + testDaysAgo;
 		do {
 			//readCSV
 			log.error("Dia: "+ last + " Archive: " + file + " Started.");
@@ -255,20 +263,32 @@ public class ForexNeural {
 				String idealTrainTest = "" + Math.round(idealTest[idealTest.length - last][0]);
 
 				log.info("Dia: "+ last + " Archive: " + file  +" prediction: " + actual1 +  " actual: " + idealTrainTest);
-				if (idealTrainTest.equals(actual1) && last > 1) {
+				if (idealTrainTest.equals(actual1) && last > testDaysAgo) {
 					assertPrediction++;
 					openTotalWin += Math.abs(close - open); 
+					
 					i++;
-				} else if (last > 1){
+				} else if (last > testDaysAgo){
 					openTotalLose += Math.abs(close - open); 
 					i++;
 				}
 				
 				log.info("Dia: "+ last + " Archive: " + file  + "  Network traiined to error: " + e1 );
-				if (buyOrSell != -1 && write && last == 1) {
+				if (buyOrSell != -1 && write && last == testDaysAgo) {
 					if ((e1 < toleranceErrorBuy && buyOrSell == 1) ||	(e1 < toleranceErrorSell && buyOrSell == 0)) {
-						WriteOrder writeOrder  = new WriteOrder();
-						writeOrder.writeOrder(pathCSV, file, buyOrSell);
+						WriteOrderTest writeOrder  = new WriteOrderTest();
+						writeOrder.writeOrder(pathCSV, file, buyOrSell, readCSV.getDays()[readCSV.getDays().length - last] );
+						if (idealTrainTest.equals(actual1)) {
+							assertsProbWrite++;
+							countWrite++;
+						} else {
+							countWrite++;
+						}
+						if (idealTrainTest.equals(actual1)) {							
+							openTotalWinWrite += Math.abs(close - open); 	
+						} else if (last == testDaysAgo){
+							loseTotalWrite += Math.abs(close - open); 
+						}
 					} else {
 						log.info("Order discarded by error: " + e1);
 					}
@@ -277,7 +297,7 @@ public class ForexNeural {
 			}
 			last--;
 			//log.info(network.toString());
-		} while(last > 0);
+		} while(last > (testDaysAgo -1));
 		if(i > 0) {
 			log.info("********************************************************");
 			log.info("Archive: " + file  + " prob: " + 
@@ -296,15 +316,60 @@ public class ForexNeural {
 	}	
 	
 	public void thinkSmart(String pathCSV, String file) throws Exception {
-		for (int i = 0; i < 50; i++) {
-			trainNet = null;
-			learn(pathCSV,file);
-			think(pathCSV,file, false);
-			if (assertsProb > probe) {
-				think(pathCSV,file, true);
-				return;
+		for (int j = 25; j > 2; j--) {
+			assertsProb = 0.0;
+			for (int i = 0; i < 50; i++) {
+				trainNet = null;
+				learn(pathCSV,file, j);
+				think(pathCSV,file, false, j);
+				if (assertsProb > probe) {
+					think(pathCSV,file, true, j);
+					break;
+				}
 			}
+			writeAsserts(pathCSV,file);
 		}
+		
+	}
+	
+	private void writeAsserts(String pathCSV, String fileName) throws Exception {
+		String content = "This is the conclusion of the file.";
+
+		File file = new File(pathCSV + fileName + ".conclusion");
+
+		// if file doesnt exists, then create it
+		if (!file.exists()) {
+			file.createNewFile();
+		} else {
+			file.delete();
+			file.createNewFile();
+		}
+
+		FileWriter fw = new FileWriter(file.getAbsoluteFile());
+		BufferedWriter bw = new BufferedWriter(fw);
+		bw.write(content);
+		bw.newLine();
+		bw.write("********************************************************");
+		bw.newLine();
+		bw.write("Archive: " + fileName  + " prob: ");
+		bw.newLine();
+		bw.write("percentage: "+	(double)((double)assertsProbWrite/(double)countWrite)*100); 
+		bw.newLine();
+		bw.write(			"% efec. win: " + (openTotalWinWrite - loseTotalWrite));
+		bw.newLine();
+		bw.write(			" Gross win: " + openTotalWinWrite);
+		bw.newLine();
+		bw.write(			" Gross lose: " + loseTotalWrite);
+		bw.newLine();
+		bw.write(			" cant: " + assertsProbWrite + " " + countWrite );
+		bw.newLine();
+		bw.write( "assertProb: " +  (double)((double)assertsProbWrite/(double)countWrite));
+		bw.newLine();
+		bw.write("********************************************************" );
+		bw.newLine();
+		bw.close();
+
+		System.out.println("Done");
 	}
 	
 	private void createArraysTester(
@@ -340,7 +405,7 @@ public class ForexNeural {
 	}
 
 	public void setEpochs(int epochs) {
-		ForexNeural.epochs = epochs;
+		ForexNeuralTest.epochs = epochs;
 	}
 
 	public double getErrorTrain() {
@@ -348,7 +413,7 @@ public class ForexNeural {
 	}
 
 	public void setErrorTrain(double errorTrain) {
-		ForexNeural.errorTrain = errorTrain;
+		ForexNeuralTest.errorTrain = errorTrain;
 	}
 
 	public int getHiddenNeurons() {
@@ -372,7 +437,7 @@ public class ForexNeural {
 	}
 
 	public void setLearningRate(double learningRate) {
-		ForexNeural.learningRate = learningRate;
+		ForexNeuralTest.learningRate = learningRate;
 	}
 
 	public double getProbe() {
@@ -380,7 +445,7 @@ public class ForexNeural {
 	}
 
 	public void setProbe(double probe) {
-		ForexNeural.probe = probe;
+		ForexNeuralTest.probe = probe;
 	}
 
 	public int getTryModel() {
@@ -388,7 +453,7 @@ public class ForexNeural {
 	}
 
 	public void setTryModel(int tryModel) {
-		ForexNeural.tryModel = tryModel;
+		ForexNeuralTest.tryModel = tryModel;
 	}
 
 	public static String getModel() {
@@ -396,7 +461,7 @@ public class ForexNeural {
 	}
 
 	public static void setModel(String model) {
-		ForexNeural.model = model;
+		ForexNeuralTest.model = model;
 	}
 
 
@@ -456,7 +521,7 @@ public class ForexNeural {
 
 
 	public void setProbeTrain(double probeTrain) {
-		ForexNeural.probeTrain = probeTrain;
+		ForexNeuralTest.probeTrain = probeTrain;
 	}
 
     
