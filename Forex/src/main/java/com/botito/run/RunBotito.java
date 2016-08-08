@@ -143,6 +143,8 @@ public class RunBotito implements Runnable {
 			filePropeties = filePropeties.split("-")[0] + "-" + filePropeties.split("-")[1] + ".properties" ;
 		    Properties propiedades = new Properties();
 		    
+		    path += "/properties/";
+		    
 		    propiedades
 		     .load(new FileInputStream(path + filePropeties));
 		 

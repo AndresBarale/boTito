@@ -142,7 +142,7 @@ public class RunBotito  implements Runnable  {
 			String filePropeties = FilenameUtils.removeExtension(file);
 			filePropeties = filePropeties.split("-")[0] + "-" + filePropeties.split("-")[1] + ".properties" ;
 		    Properties propiedades = new Properties();
-		    
+		    path += "/properties/";
 		    propiedades
 		     .load(new FileInputStream(path + filePropeties));
 		 
@@ -162,7 +162,7 @@ public class RunBotito  implements Runnable  {
 		    }
 		    
 		    rprop.setHiddenNeurons2(Integer.parseInt(hiddenNeurons2));
-		    rprop.setLastTest(Integer.parseInt(lastTest));
+		    rprop.setLastTest(Integer.parseInt(lastTest) - 1);
 		    rprop.setLastTestLearn(Integer.parseInt(lastTestLearn));
 		    rprop.setToleranceErrorBuy(Double.parseDouble(toleranceErrorBuy));
 		    rprop.setToleranceErrorLearn(Double.parseDouble(toleranceErrorLearn));
@@ -178,8 +178,4 @@ public class RunBotito  implements Runnable  {
 		   log.error("File propieties can't read.");
 	   }
 	}
-	
-
-		
-
 }
