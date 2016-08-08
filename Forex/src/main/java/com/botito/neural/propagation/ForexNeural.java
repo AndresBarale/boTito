@@ -247,41 +247,73 @@ public class ForexNeural {
 				
 				
 				dataTestOne[0] = dataTest[dataTest.length - last];
-				
-				MLDataSet trainingSet2 = new BasicMLDataSet(dataTestOne,idealTestOne);
-				String actual1 = "";
-				int k = 0;
-				for (final MLDataPair pair : trainingSet2) {
-					if (k == 0) {	
-						final MLData output = network.compute(pair.getInput());
-						actual1 = "" + Math.round(Double.parseDouble(EncogUtility.formatNeuralData(output).replace(",", ".")));
+				if (last >1) {
+					MLDataSet trainingSet2 = new BasicMLDataSet(dataTestOne,idealTestOne);
+					String actual1 = "";
+					int k = 0;
+					for (final MLDataPair pair : trainingSet2) {
+						if (k == 0) {	
+							final MLData output = network.compute(pair.getInput());
+							actual1 = "" + Math.round(Double.parseDouble(EncogUtility.formatNeuralData(output).replace(",", ".")));
+						}
+						k++; 
+							
 					}
-					k++; 
-						
-				}
-				buyOrSell = Integer.parseInt(actual1);
-				e1 = network.calculateError(trainingSet2);
-				String idealTrainTest = "" + Math.round(idealTest[idealTest.length - last][0]);
-
-				log.info("Dia: "+ last + " Archive: " + file  +" prediction: " + actual1 +  " actual: " + idealTrainTest);
-				if (idealTrainTest.equals(actual1) && last > 1) {
-					assertPrediction++;
-					openTotalWin += Math.abs(close - open); 
-					i++;
-				} else if (last > 1){
-					openTotalLose += Math.abs(close - open); 
-					i++;
-				}
-				
-				log.info("Dia: "+ last + " Archive: " + file  + "  Network traiined to error: " + e1 );
-				if (buyOrSell != -1 && write && last == 1) {
-					if ((e1 < toleranceErrorBuy && buyOrSell == 1) ||	(e1 < toleranceErrorSell && buyOrSell == 0)) {
-						WriteOrder writeOrder  = new WriteOrder();
-						writeOrder.writeOrder(pathCSV, file, buyOrSell);
-					} else {
-						log.info("Order discarded by error: " + e1);
+					buyOrSell = Integer.parseInt(actual1);
+					e1 = network.calculateError(trainingSet2);
+					String idealTrainTest = "" + Math.round(idealTest[idealTest.length - last][0]);
+	
+					log.info("Dia: "+ last + " Archive: " + file  +" prediction: " + actual1 +  " actual: " + idealTrainTest);
+					if (idealTrainTest.equals(actual1) && last > 1) {
+						assertPrediction++;
+						openTotalWin += Math.abs(close - open); 
+						i++;
+					} else if (last > 1){
+						openTotalLose += Math.abs(close - open); 
+						i++;
 					}
-				}			
+					
+					log.info("Dia: "+ last + " Archive: " + file  + "  Network traiined to error: " + e1 );
+				} else {
+					MLDataSet trainingSet2 = new BasicMLDataSet(dataTestOne,idealTest);
+					String actual1 = "";
+					int k = 0;
+					for (final MLDataPair pair : trainingSet2) {
+						if (k == 0) {	
+							final MLData output = network.compute(pair.getInput());
+							actual1 = "" + Math.round(Double.parseDouble(EncogUtility.formatNeuralData(output).replace(",", ".")));
+						}
+						k++; 
+							
+					}
+					buyOrSell = Integer.parseInt(actual1);
+					e1 = network.calculateError(trainingSet2);
+					String idealTrainTest = "" + Math.round(idealTest[idealTest.length - last][0]);
+	
+					log.info("Dia: "+ last + " Archive: " + file  +" prediction: " + actual1 +  " actual: " + idealTrainTest);
+					if (idealTrainTest.equals(actual1) && last > 1) {
+						assertPrediction++;
+						openTotalWin += Math.abs(close - open); 
+						i++;
+					} else if (last > 1){
+						openTotalLose += Math.abs(close - open); 
+						i++;
+					}
+					if(i > 0) {
+						assertsProb = (double)((double)assertPrediction/(double)i);
+					}
+					log.info("Dia: "+ last + " Archive: " + file  + "  Network traiined to error: " + e1 );
+					
+					if (buyOrSell != -1 && write && last == 1) {
+						if ((e1 < toleranceErrorBuy && buyOrSell == 1) ||	(e1 < toleranceErrorSell && buyOrSell == 0)) {
+							WriteOrder writeOrder  = new WriteOrder();
+							writeOrder.writeOrder(pathCSV, file, buyOrSell);
+						} else {
+							log.info("Order discarded by error: " + e1);
+						}
+					}	
+					
+				}
 
 			}
 			last--;
@@ -295,7 +327,7 @@ public class ForexNeural {
 						" Gross win: " + openTotalWin +
 						" Gross lose: " + openTotalLose +
 						" cant: " + assertPrediction + " " + i );
-						assertsProb = (double)((double)assertPrediction/(double)i);
+						//assertsProb = (double)((double)assertPrediction/(double)i);
 			log.info("********************************************************" + mh4);
 			
 			
@@ -305,7 +337,7 @@ public class ForexNeural {
 	}	
 	
 	public void thinkSmart(String pathCSV, String file) throws Exception {
-		for (int i = 0; i < 50; i++) {
+		for (int i = 0; i < 23; i++) {
 			trainNet = null;
 			learn(pathCSV,file);
 			think(pathCSV,file, false);
