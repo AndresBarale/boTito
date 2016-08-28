@@ -42,6 +42,7 @@ public class ForexNeural {
 	private List<Integer> layerNeurons = new ArrayList<Integer>();
 	//private int asserts = 20;
 	private double assertsProb;
+	private boolean discarded = false;
 	private final static Logger log = Logger.getLogger(ForexNeural.class);
 	
 	public void learn(String pathCSV, String file) throws Exception {	
@@ -308,8 +309,10 @@ public class ForexNeural {
 						if ((e1 < toleranceErrorBuy && buyOrSell == 1) ||	(e1 < toleranceErrorSell && buyOrSell == 0)) {
 							WriteOrder writeOrder  = new WriteOrder();
 							writeOrder.writeOrder(pathCSV, file, buyOrSell);
+							discarded = false;
 						} else {
 							log.info("Order discarded by error: " + e1);
+							discarded = true;
 						}
 					}	
 					
@@ -337,13 +340,15 @@ public class ForexNeural {
 	}	
 	
 	public void thinkSmart(String pathCSV, String file) throws Exception {
-		for (int i = 0; i < 23; i++) {
+		for (int i = 0; i < 70; i++) {
 			trainNet = null;
 			learn(pathCSV,file);
 			think(pathCSV,file, false);
 			if (assertsProb > probe) {
 				think(pathCSV,file, true);
-				return;
+				if (!discarded) {
+					return;
+				}
 			}
 		}
 	}
