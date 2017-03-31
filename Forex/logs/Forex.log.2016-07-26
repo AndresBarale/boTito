@@ -1,0 +1,2 @@
+0; 2016-07-26 23:01:10,229; [DefaultQuartzScheduler_Worker-1]; ERROR; com.botito.neural.propagation.ForexNeural; ; - Dia: 30 Archive: NASDAQ100-1440.csv Started.
+0; 2016-07-26 23:03:20,213; [DefaultQuartzScheduler_Worker-1]; ERROR; com.botito.neural.propagation.ForexNeural; ; - Dia: 30 Archive: NASDAQ100-1440.csv Started.

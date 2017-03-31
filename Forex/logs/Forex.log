@@ -1,0 +1,4 @@
+0; 2016-08-10 01:09:22,373; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Date: Wed Aug 10 01:09:22 ART 2016 Reading files...
+29; 2016-08-10 01:09:22,402; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Processing file: EURUSD-240.csv
+117; 2016-08-10 01:09:22,490; [DefaultQuartzScheduler_Worker-1]; ERROR; com.botito.neural.propagation.ForexNeural; ; - File propieties not exist.
+117; 2016-08-10 01:09:22,490; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Thinking file: EURUSD-240.csv

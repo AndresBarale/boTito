@@ -1,0 +1,481 @@
+0; 2016-08-08 02:10:12,251; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Date: Mon Aug 08 02:10:12 ART 2016 Reading files...
+66; 2016-08-08 02:10:12,317; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Processing file: EURJPY-1440.csv
+491; 2016-08-08 02:10:12,742; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Thinking file: EURJPY-1440.csv
+7751; 2016-08-08 02:10:20,002; [DefaultQuartzScheduler_Worker-2]; INFO; com.botito.neural.propagation.ForexNeural; ; - Date: Mon Aug 08 02:10:20 ART 2016 Reading files...
+7765; 2016-08-08 02:10:20,016; [DefaultQuartzScheduler_Worker-2]; INFO; com.botito.neural.propagation.ForexNeural; ; - Processing file: EURJPY-240.csv
+7767; 2016-08-08 02:10:20,018; [DefaultQuartzScheduler_Worker-2]; ERROR; com.botito.neural.propagation.ForexNeural; ; - File propieties not exist.
+7767; 2016-08-08 02:10:20,018; [DefaultQuartzScheduler_Worker-2]; INFO; com.botito.neural.propagation.ForexNeural; ; - Thinking file: EURJPY-240.csv
+0; 2016-08-08 02:10:50,164; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Date: Mon Aug 08 02:10:50 ART 2016 Reading files...
+3; 2016-08-08 02:10:50,167; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Processing file: EURJPY-1440.csv
+21; 2016-08-08 02:10:50,185; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Thinking file: EURJPY-1440.csv
+9740; 2016-08-08 02:10:59,904; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Learn!!! Dia: 15 Epoch #98 Archive: EURJPY-1440.csv Error:8.217227531744987E-7 Segs: 9.718
+9789; 2016-08-08 02:10:59,953; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Learn!!! Dia: 15 Archive: EURJPY-1440.csv Try to predict: 0 0 discarded by error 0.19767652363548074
+9790; 2016-08-08 02:10:59,954; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Learn!!! Dia: 14 Archive: EURJPY-1440.csv prediction: 1 actual: 1
+9791; 2016-08-08 02:10:59,955; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Learn!!! Dia: 14 Archive: EURJPY-1440.csv  Network traiined to error: 0.12239048825500283
+9791; 2016-08-08 02:10:59,955; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Learn!!! Dia: 13 Archive: EURJPY-1440.csv Try to predict: 1 0 discarded by error 0.992321361903531
+9792; 2016-08-08 02:10:59,956; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Learn!!! Dia: 12 Archive: EURJPY-1440.csv Try to predict: 1 0 discarded by error 0.4838090986794523
+9793; 2016-08-08 02:10:59,957; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Learn!!! Dia: 11 Archive: EURJPY-1440.csv Try to predict: 1 0 discarded by error 0.8895078655522878
+9793; 2016-08-08 02:10:59,957; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - ********************************************************
+9794; 2016-08-08 02:10:59,958; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Learn!!! Archive: EURJPY-1440.csv prob: 100.0% efec. win: 0.6984999999999979 Gross win: 0.6984999999999979 Gross lose: 0.0 cant: 1 1
+9794; 2016-08-08 02:10:59,958; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - ********************************************************1
+9794; 2016-08-08 02:10:59,958; [DefaultQuartzScheduler_Worker-1]; ERROR; com.botito.neural.propagation.ForexNeural; ; - Dia: 10 Archive: EURJPY-1440.csv Started.
+9839; 2016-08-08 02:11:00,003; [DefaultQuartzScheduler_Worker-2]; INFO; com.botito.neural.propagation.ForexNeural; ; - Date: Mon Aug 08 02:11:00 ART 2016 Reading files...
+9843; 2016-08-08 02:11:00,007; [DefaultQuartzScheduler_Worker-2]; INFO; com.botito.neural.propagation.ForexNeural; ; - Processing file: GBPJPY-1440-2016-8-2-0-00-00.csv
+9844; 2016-08-08 02:11:00,008; [DefaultQuartzScheduler_Worker-2]; INFO; com.botito.neural.propagation.ForexNeural; ; - Thinking file: GBPJPY-1440-2016-8-2-0-00-00.csv
+10198; 2016-08-08 02:11:00,362; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 10 Archive: EURJPY-1440.csv Error:8.217227531744987E-7 Segs: 0.404
+10202; 2016-08-08 02:11:00,366; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 10 Archive: EURJPY-1440.csv prediction: 0 actual: 0
+10202; 2016-08-08 02:11:00,366; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 10 Archive: EURJPY-1440.csv  Network traiined to error: 0.02959979131430968
+10203; 2016-08-08 02:11:00,367; [DefaultQuartzScheduler_Worker-1]; ERROR; com.botito.neural.propagation.ForexNeural; ; - Dia: 9 Archive: EURJPY-1440.csv Started.
+10452; 2016-08-08 02:11:00,616; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 9 Archive: EURJPY-1440.csv Error:8.217227531744987E-7 Segs: 0.249
+10453; 2016-08-08 02:11:00,617; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 9 Archive: EURJPY-1440.csv prediction: 1 actual: 1
+10455; 2016-08-08 02:11:00,619; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 9 Archive: EURJPY-1440.csv  Network traiined to error: 0.9980508720760765
+10455; 2016-08-08 02:11:00,619; [DefaultQuartzScheduler_Worker-1]; ERROR; com.botito.neural.propagation.ForexNeural; ; - Dia: 8 Archive: EURJPY-1440.csv Started.
+10790; 2016-08-08 02:11:00,954; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 8 Archive: EURJPY-1440.csv Error:8.217227531744987E-7 Segs: 0.335
+10792; 2016-08-08 02:11:00,956; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 8 Archive: EURJPY-1440.csv prediction: 0 actual: 1
+10792; 2016-08-08 02:11:00,956; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 8 Archive: EURJPY-1440.csv  Network traiined to error: 0.10114674676462482
+10792; 2016-08-08 02:11:00,956; [DefaultQuartzScheduler_Worker-1]; ERROR; com.botito.neural.propagation.ForexNeural; ; - Dia: 7 Archive: EURJPY-1440.csv Started.
+10964; 2016-08-08 02:11:01,128; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 7 Archive: EURJPY-1440.csv Error:8.217227531744987E-7 Segs: 0.171
+10970; 2016-08-08 02:11:01,134; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 7 Archive: EURJPY-1440.csv prediction: 0 actual: 0
+10970; 2016-08-08 02:11:01,134; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 7 Archive: EURJPY-1440.csv  Network traiined to error: 8.26199236553954E-6
+10970; 2016-08-08 02:11:01,134; [DefaultQuartzScheduler_Worker-1]; ERROR; com.botito.neural.propagation.ForexNeural; ; - Dia: 6 Archive: EURJPY-1440.csv Started.
+11259; 2016-08-08 02:11:01,423; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 6 Archive: EURJPY-1440.csv Error:8.217227531744987E-7 Segs: 0.289
+11262; 2016-08-08 02:11:01,426; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 6 Archive: EURJPY-1440.csv prediction: 0 actual: 0
+11263; 2016-08-08 02:11:01,427; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 6 Archive: EURJPY-1440.csv  Network traiined to error: 0.0020519282933486233
+11263; 2016-08-08 02:11:01,427; [DefaultQuartzScheduler_Worker-1]; ERROR; com.botito.neural.propagation.ForexNeural; ; - Dia: 5 Archive: EURJPY-1440.csv Started.
+11550; 2016-08-08 02:11:01,714; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 5 Archive: EURJPY-1440.csv Error:8.217227531744987E-7 Segs: 0.286
+11553; 2016-08-08 02:11:01,717; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 5 Archive: EURJPY-1440.csv prediction: 0 actual: 0
+11554; 2016-08-08 02:11:01,718; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 5 Archive: EURJPY-1440.csv  Network traiined to error: 0.07769169395204709
+11556; 2016-08-08 02:11:01,720; [DefaultQuartzScheduler_Worker-1]; ERROR; com.botito.neural.propagation.ForexNeural; ; - Dia: 4 Archive: EURJPY-1440.csv Started.
+11744; 2016-08-08 02:11:01,908; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 4 Archive: EURJPY-1440.csv Error:8.217227531744987E-7 Segs: 0.188
+11745; 2016-08-08 02:11:01,909; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 4 Archive: EURJPY-1440.csv prediction: 0 actual: 0
+11746; 2016-08-08 02:11:01,910; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 4 Archive: EURJPY-1440.csv  Network traiined to error: 0.20455874377046412
+11764; 2016-08-08 02:11:01,928; [DefaultQuartzScheduler_Worker-1]; ERROR; com.botito.neural.propagation.ForexNeural; ; - Dia: 3 Archive: EURJPY-1440.csv Started.
+11942; 2016-08-08 02:11:02,106; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 3 Archive: EURJPY-1440.csv Error:8.217227531744987E-7 Segs: 0.178
+11943; 2016-08-08 02:11:02,107; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 3 Archive: EURJPY-1440.csv prediction: 1 actual: 0
+11945; 2016-08-08 02:11:02,109; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 3 Archive: EURJPY-1440.csv  Network traiined to error: 0.5180147578889075
+11945; 2016-08-08 02:11:02,109; [DefaultQuartzScheduler_Worker-1]; ERROR; com.botito.neural.propagation.ForexNeural; ; - Dia: 2 Archive: EURJPY-1440.csv Started.
+12354; 2016-08-08 02:11:02,518; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 2 Archive: EURJPY-1440.csv Error:8.217227531744987E-7 Segs: 0.408
+12356; 2016-08-08 02:11:02,520; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 2 Archive: EURJPY-1440.csv prediction: 1 actual: 1
+12356; 2016-08-08 02:11:02,520; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 2 Archive: EURJPY-1440.csv  Network traiined to error: 0.6956666541150716
+12357; 2016-08-08 02:11:02,521; [DefaultQuartzScheduler_Worker-1]; ERROR; com.botito.neural.propagation.ForexNeural; ; - Dia: 1 Archive: EURJPY-1440.csv Started.
+12524; 2016-08-08 02:11:02,688; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 1 Archive: EURJPY-1440.csv Error:8.217227531744987E-7 Segs: 0.167
+12525; 2016-08-08 02:11:02,689; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 1 Archive: EURJPY-1440.csv prediction: 0 actual: 0
+12525; 2016-08-08 02:11:02,689; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 1 Archive: EURJPY-1440.csv  Network traiined to error: 0.031391967216681055
+12526; 2016-08-08 02:11:02,690; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - ********************************************************
+12531; 2016-08-08 02:11:02,695; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Archive: EURJPY-1440.csv prob: 77.77777777777779% efec. win: 6.685642857142851 Gross win: 8.788785714285705 Gross lose: 2.103142857142855 cant: 7 9
+12532; 2016-08-08 02:11:02,696; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - ********************************************************0
+12532; 2016-08-08 02:11:02,696; [DefaultQuartzScheduler_Worker-1]; ERROR; com.botito.neural.propagation.ForexNeural; ; - Dia: 10 Archive: EURJPY-1440.csv Started.
+12709; 2016-08-08 02:11:02,873; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 10 Archive: EURJPY-1440.csv Error:8.217227531744987E-7 Segs: 0.166
+12714; 2016-08-08 02:11:02,878; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 10 Archive: EURJPY-1440.csv prediction: 0 actual: 0
+12714; 2016-08-08 02:11:02,878; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 10 Archive: EURJPY-1440.csv  Network traiined to error: 0.02959979131430968
+12714; 2016-08-08 02:11:02,878; [DefaultQuartzScheduler_Worker-1]; ERROR; com.botito.neural.propagation.ForexNeural; ; - Dia: 9 Archive: EURJPY-1440.csv Started.
+12930; 2016-08-08 02:11:03,094; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 9 Archive: EURJPY-1440.csv Error:8.217227531744987E-7 Segs: 0.215
+12932; 2016-08-08 02:11:03,096; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 9 Archive: EURJPY-1440.csv prediction: 1 actual: 1
+12933; 2016-08-08 02:11:03,097; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 9 Archive: EURJPY-1440.csv  Network traiined to error: 0.9980508720760765
+12935; 2016-08-08 02:11:03,099; [DefaultQuartzScheduler_Worker-1]; ERROR; com.botito.neural.propagation.ForexNeural; ; - Dia: 8 Archive: EURJPY-1440.csv Started.
+13032; 2016-08-08 02:11:03,196; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 8 Archive: EURJPY-1440.csv Error:8.217227531744987E-7 Segs: 0.097
+13033; 2016-08-08 02:11:03,197; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 8 Archive: EURJPY-1440.csv prediction: 0 actual: 1
+13034; 2016-08-08 02:11:03,198; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 8 Archive: EURJPY-1440.csv  Network traiined to error: 0.10114674676462482
+13034; 2016-08-08 02:11:03,198; [DefaultQuartzScheduler_Worker-1]; ERROR; com.botito.neural.propagation.ForexNeural; ; - Dia: 7 Archive: EURJPY-1440.csv Started.
+13096; 2016-08-08 02:11:03,260; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 7 Archive: EURJPY-1440.csv Error:8.217227531744987E-7 Segs: 0.062
+13099; 2016-08-08 02:11:03,263; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 7 Archive: EURJPY-1440.csv prediction: 0 actual: 0
+13099; 2016-08-08 02:11:03,263; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 7 Archive: EURJPY-1440.csv  Network traiined to error: 8.26199236553954E-6
+13099; 2016-08-08 02:11:03,263; [DefaultQuartzScheduler_Worker-1]; ERROR; com.botito.neural.propagation.ForexNeural; ; - Dia: 6 Archive: EURJPY-1440.csv Started.
+13181; 2016-08-08 02:11:03,345; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 6 Archive: EURJPY-1440.csv Error:8.217227531744987E-7 Segs: 0.082
+13183; 2016-08-08 02:11:03,347; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 6 Archive: EURJPY-1440.csv prediction: 0 actual: 0
+13186; 2016-08-08 02:11:03,350; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 6 Archive: EURJPY-1440.csv  Network traiined to error: 0.0020519282933486233
+13187; 2016-08-08 02:11:03,351; [DefaultQuartzScheduler_Worker-1]; ERROR; com.botito.neural.propagation.ForexNeural; ; - Dia: 5 Archive: EURJPY-1440.csv Started.
+13347; 2016-08-08 02:11:03,511; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 5 Archive: EURJPY-1440.csv Error:8.217227531744987E-7 Segs: 0.16
+13348; 2016-08-08 02:11:03,512; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 5 Archive: EURJPY-1440.csv prediction: 0 actual: 0
+13348; 2016-08-08 02:11:03,512; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 5 Archive: EURJPY-1440.csv  Network traiined to error: 0.07769169395204709
+13348; 2016-08-08 02:11:03,512; [DefaultQuartzScheduler_Worker-1]; ERROR; com.botito.neural.propagation.ForexNeural; ; - Dia: 4 Archive: EURJPY-1440.csv Started.
+13505; 2016-08-08 02:11:03,669; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 4 Archive: EURJPY-1440.csv Error:8.217227531744987E-7 Segs: 0.156
+13507; 2016-08-08 02:11:03,671; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 4 Archive: EURJPY-1440.csv prediction: 0 actual: 0
+13508; 2016-08-08 02:11:03,672; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 4 Archive: EURJPY-1440.csv  Network traiined to error: 0.20455874377046412
+13508; 2016-08-08 02:11:03,672; [DefaultQuartzScheduler_Worker-1]; ERROR; com.botito.neural.propagation.ForexNeural; ; - Dia: 3 Archive: EURJPY-1440.csv Started.
+13881; 2016-08-08 02:11:04,045; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 3 Archive: EURJPY-1440.csv Error:8.217227531744987E-7 Segs: 0.372
+13883; 2016-08-08 02:11:04,047; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 3 Archive: EURJPY-1440.csv prediction: 1 actual: 0
+13883; 2016-08-08 02:11:04,047; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 3 Archive: EURJPY-1440.csv  Network traiined to error: 0.5180147578889075
+13883; 2016-08-08 02:11:04,047; [DefaultQuartzScheduler_Worker-1]; ERROR; com.botito.neural.propagation.ForexNeural; ; - Dia: 2 Archive: EURJPY-1440.csv Started.
+14027; 2016-08-08 02:11:04,191; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 2 Archive: EURJPY-1440.csv Error:8.217227531744987E-7 Segs: 0.143
+14028; 2016-08-08 02:11:04,192; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 2 Archive: EURJPY-1440.csv prediction: 1 actual: 1
+14028; 2016-08-08 02:11:04,192; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 2 Archive: EURJPY-1440.csv  Network traiined to error: 0.6956666541150716
+14028; 2016-08-08 02:11:04,192; [DefaultQuartzScheduler_Worker-1]; ERROR; com.botito.neural.propagation.ForexNeural; ; - Dia: 1 Archive: EURJPY-1440.csv Started.
+14091; 2016-08-08 02:11:04,255; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 1 Archive: EURJPY-1440.csv Error:8.217227531744987E-7 Segs: 0.063
+14092; 2016-08-08 02:11:04,256; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 1 Archive: EURJPY-1440.csv prediction: 0 actual: 0
+14092; 2016-08-08 02:11:04,256; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 1 Archive: EURJPY-1440.csv  Network traiined to error: 0.031391967216681055
+14135; 2016-08-08 02:11:04,299; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - ********************************************************
+14135; 2016-08-08 02:11:04,299; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Archive: EURJPY-1440.csv prob: 77.77777777777779% efec. win: 6.685642857142851 Gross win: 8.788785714285705 Gross lose: 2.103142857142855 cant: 7 9
+14135; 2016-08-08 02:11:04,299; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - ********************************************************0
+14436; 2016-08-08 02:11:04,600; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Processing file: GBPJPY-240.csv
+14441; 2016-08-08 02:11:04,605; [DefaultQuartzScheduler_Worker-1]; ERROR; com.botito.neural.propagation.ForexNeural; ; - File propieties not exist.
+14442; 2016-08-08 02:11:04,606; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Thinking file: GBPJPY-240.csv
+19838; 2016-08-08 02:11:10,002; [DefaultQuartzScheduler_Worker-3]; INFO; com.botito.neural.propagation.ForexNeural; ; - Date: Mon Aug 08 02:11:10 ART 2016 Reading files...
+19838; 2016-08-08 02:11:10,002; [DefaultQuartzScheduler_Worker-3]; INFO; com.botito.neural.propagation.ForexNeural; ; - Processing file: EURUSD-1440.csv
+19839; 2016-08-08 02:11:10,003; [DefaultQuartzScheduler_Worker-3]; INFO; com.botito.neural.propagation.ForexNeural; ; - Thinking file: EURUSD-1440.csv
+0; 2016-08-08 15:11:20,303; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Date: Mon Aug 08 15:11:20 ART 2016 Reading files...
+19; 2016-08-08 15:11:20,322; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Processing file: GBPJPY-1440-2016-8-2-0-00-00.csv
+53; 2016-08-08 15:11:20,356; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Thinking file: GBPJPY-1440-2016-8-2-0-00-00.csv
+1; 2016-08-08 15:13:40,206; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Date: Mon Aug 08 15:13:40 ART 2016 Reading files...
+4; 2016-08-08 15:13:40,209; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Processing file: GBPJPY-1440-2016-8-2-0-00-00.csv
+25; 2016-08-08 15:13:40,230; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Thinking file: GBPJPY-1440-2016-8-2-0-00-00.csv
+0; 2016-08-08 15:14:40,182; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Date: Mon Aug 08 15:14:40 ART 2016 Reading files...
+3; 2016-08-08 15:14:40,185; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Processing file: GBPJPY-1440-2016-8-2-0-00-00.csv
+23; 2016-08-08 15:14:40,205; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Thinking file: GBPJPY-1440-2016-8-2-0-00-00.csv
+9820; 2016-08-08 15:14:50,002; [DefaultQuartzScheduler_Worker-2]; INFO; com.botito.neural.propagation.ForexNeural; ; - Date: Mon Aug 08 15:14:50 ART 2016 Reading files...
+9831; 2016-08-08 15:14:50,013; [DefaultQuartzScheduler_Worker-2]; INFO; com.botito.neural.propagation.ForexNeural; ; - Processing file: NASDAQ100-1440.csv
+9831; 2016-08-08 15:14:50,013; [DefaultQuartzScheduler_Worker-2]; INFO; com.botito.neural.propagation.ForexNeural; ; - Thinking file: NASDAQ100-1440.csv
+19820; 2016-08-08 15:15:00,002; [DefaultQuartzScheduler_Worker-3]; INFO; com.botito.neural.propagation.ForexNeural; ; - Date: Mon Aug 08 15:15:00 ART 2016 Reading files...
+29825; 2016-08-08 15:15:10,007; [DefaultQuartzScheduler_Worker-4]; INFO; com.botito.neural.propagation.ForexNeural; ; - Date: Mon Aug 08 15:15:10 ART 2016 Reading files...
+32364; 2016-08-08 15:15:12,546; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Learn!!! Dia: 14 Epoch #121 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv Error:8.451408701929424E-7 Segs: 32.341
+32407; 2016-08-08 15:15:12,589; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Learn!!! Dia: 14 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv prediction: 1 actual: 1
+32407; 2016-08-08 15:15:12,589; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Learn!!! Dia: 14 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv  Network traiined to error: 2.621206688951711E-10
+32408; 2016-08-08 15:15:12,590; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Learn!!! Dia: 13 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv prediction: 0 actual: 0
+32409; 2016-08-08 15:15:12,591; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Learn!!! Dia: 13 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv  Network traiined to error: 0.08428224861356307
+32410; 2016-08-08 15:15:12,592; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Learn!!! Dia: 12 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv Try to predict: 0 1 discarded by error 0.7476914193254609
+32411; 2016-08-08 15:15:12,593; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Learn!!! Dia: 11 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv Try to predict: 1 0 discarded by error 0.32307256123971506
+32412; 2016-08-08 15:15:12,594; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Learn!!! Dia: 10 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv prediction: 1 actual: 1
+32412; 2016-08-08 15:15:12,594; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Learn!!! Dia: 10 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv  Network traiined to error: 0.0018235183338077003
+32413; 2016-08-08 15:15:12,595; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - ********************************************************
+32413; 2016-08-08 15:15:12,595; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Learn!!! Archive: GBPJPY-1440-2016-8-2-0-00-00.csv prob: 100.0% efec. win: 10.19464285714285 Gross win: 10.19464285714285 Gross lose: 0.0 cant: 3 3
+32414; 2016-08-08 15:15:12,596; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - ********************************************************1
+32414; 2016-08-08 15:15:12,596; [DefaultQuartzScheduler_Worker-1]; ERROR; com.botito.neural.propagation.ForexNeural; ; - Dia: 9 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv Started.
+32903; 2016-08-08 15:15:13,085; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 9 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv Error:8.451408701929424E-7 Segs: 0.488
+32909; 2016-08-08 15:15:13,091; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 9 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv prediction: 0 actual: 0
+32909; 2016-08-08 15:15:13,091; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 9 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv  Network traiined to error: 0.159701870835759
+32912; 2016-08-08 15:15:13,094; [DefaultQuartzScheduler_Worker-1]; ERROR; com.botito.neural.propagation.ForexNeural; ; - Dia: 8 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv Started.
+33993; 2016-08-08 15:15:14,175; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 8 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv Error:8.451408701929424E-7 Segs: 1.081
+33994; 2016-08-08 15:15:14,176; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 8 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv prediction: 1 actual: 0
+33996; 2016-08-08 15:15:14,178; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 8 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv  Network traiined to error: 0.365399590355976
+33996; 2016-08-08 15:15:14,178; [DefaultQuartzScheduler_Worker-1]; ERROR; com.botito.neural.propagation.ForexNeural; ; - Dia: 7 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv Started.
+34450; 2016-08-08 15:15:14,632; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 7 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv Error:8.451408701929424E-7 Segs: 0.453
+34452; 2016-08-08 15:15:14,634; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 7 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv prediction: 1 actual: 0
+34452; 2016-08-08 15:15:14,634; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 7 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv  Network traiined to error: 0.5658392923345484
+34452; 2016-08-08 15:15:14,634; [DefaultQuartzScheduler_Worker-1]; ERROR; com.botito.neural.propagation.ForexNeural; ; - Dia: 6 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv Started.
+34820; 2016-08-08 15:15:15,002; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 6 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv Error:8.451408701929424E-7 Segs: 0.366
+34825; 2016-08-08 15:15:15,007; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 6 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv prediction: 0 actual: 0
+34827; 2016-08-08 15:15:15,009; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 6 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv  Network traiined to error: 0.1808471742703299
+34868; 2016-08-08 15:15:15,050; [DefaultQuartzScheduler_Worker-1]; ERROR; com.botito.neural.propagation.ForexNeural; ; - Dia: 5 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv Started.
+35467; 2016-08-08 15:15:15,649; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 5 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv Error:8.451408701929424E-7 Segs: 0.598
+35468; 2016-08-08 15:15:15,650; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 5 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv prediction: 0 actual: 1
+35470; 2016-08-08 15:15:15,652; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 5 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv  Network traiined to error: 0.042891616402289744
+35470; 2016-08-08 15:15:15,652; [DefaultQuartzScheduler_Worker-1]; ERROR; com.botito.neural.propagation.ForexNeural; ; - Dia: 4 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv Started.
+36141; 2016-08-08 15:15:16,323; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 4 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv Error:8.451408701929424E-7 Segs: 0.665
+36142; 2016-08-08 15:15:16,324; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 4 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv prediction: 0 actual: 0
+36145; 2016-08-08 15:15:16,327; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 4 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv  Network traiined to error: 4.4476532709962574E-10
+36146; 2016-08-08 15:15:16,328; [DefaultQuartzScheduler_Worker-1]; ERROR; com.botito.neural.propagation.ForexNeural; ; - Dia: 3 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv Started.
+36327; 2016-08-08 15:15:16,509; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 3 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv Error:8.451408701929424E-7 Segs: 0.181
+36337; 2016-08-08 15:15:16,519; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 3 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv prediction: 1 actual: 0
+36337; 2016-08-08 15:15:16,519; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 3 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv  Network traiined to error: 0.9125279474072416
+36337; 2016-08-08 15:15:16,519; [DefaultQuartzScheduler_Worker-1]; ERROR; com.botito.neural.propagation.ForexNeural; ; - Dia: 2 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv Started.
+36464; 2016-08-08 15:15:16,646; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 2 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv Error:8.451408701929424E-7 Segs: 0.126
+36476; 2016-08-08 15:15:16,658; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 2 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv prediction: 0 actual: 0
+36476; 2016-08-08 15:15:16,658; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 2 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv  Network traiined to error: 0.029174403632699006
+36476; 2016-08-08 15:15:16,658; [DefaultQuartzScheduler_Worker-1]; ERROR; com.botito.neural.propagation.ForexNeural; ; - Dia: 1 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv Started.
+36622; 2016-08-08 15:15:16,804; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 1 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv Error:8.451408701929424E-7 Segs: 0.146
+36623; 2016-08-08 15:15:16,805; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 1 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv prediction: 1 actual: 1
+36623; 2016-08-08 15:15:16,805; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 1 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv  Network traiined to error: 0.049702614142717434
+36623; 2016-08-08 15:15:16,805; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - ********************************************************
+36623; 2016-08-08 15:15:16,805; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Archive: GBPJPY-1440-2016-8-2-0-00-00.csv prob: 50.0% efec. win: -2.4312142857142867 Gross win: 10.988928571428557 Gross lose: 13.420142857142844 cant: 4 8
+36623; 2016-08-08 15:15:16,805; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - ********************************************************0
+36623; 2016-08-08 15:15:16,805; [DefaultQuartzScheduler_Worker-1]; ERROR; com.botito.neural.propagation.ForexNeural; ; - Dia: 9 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv Started.
+36847; 2016-08-08 15:15:17,029; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 9 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv Error:8.451408701929424E-7 Segs: 0.223
+36849; 2016-08-08 15:15:17,031; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 9 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv prediction: 0 actual: 0
+36849; 2016-08-08 15:15:17,031; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 9 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv  Network traiined to error: 0.159701870835759
+36849; 2016-08-08 15:15:17,031; [DefaultQuartzScheduler_Worker-1]; ERROR; com.botito.neural.propagation.ForexNeural; ; - Dia: 8 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv Started.
+36991; 2016-08-08 15:15:17,173; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 8 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv Error:8.451408701929424E-7 Segs: 0.141
+36992; 2016-08-08 15:15:17,174; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 8 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv prediction: 1 actual: 0
+36992; 2016-08-08 15:15:17,174; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 8 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv  Network traiined to error: 0.365399590355976
+36993; 2016-08-08 15:15:17,175; [DefaultQuartzScheduler_Worker-1]; ERROR; com.botito.neural.propagation.ForexNeural; ; - Dia: 7 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv Started.
+37461; 2016-08-08 15:15:17,643; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 7 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv Error:8.451408701929424E-7 Segs: 0.468
+37465; 2016-08-08 15:15:17,647; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 7 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv prediction: 1 actual: 0
+37466; 2016-08-08 15:15:17,648; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 7 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv  Network traiined to error: 0.5658392923345484
+37466; 2016-08-08 15:15:17,648; [DefaultQuartzScheduler_Worker-1]; ERROR; com.botito.neural.propagation.ForexNeural; ; - Dia: 6 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv Started.
+37699; 2016-08-08 15:15:17,881; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 6 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv Error:8.451408701929424E-7 Segs: 0.233
+37702; 2016-08-08 15:15:17,884; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 6 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv prediction: 0 actual: 0
+37703; 2016-08-08 15:15:17,885; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 6 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv  Network traiined to error: 0.1808471742703299
+37703; 2016-08-08 15:15:17,885; [DefaultQuartzScheduler_Worker-1]; ERROR; com.botito.neural.propagation.ForexNeural; ; - Dia: 5 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv Started.
+37964; 2016-08-08 15:15:18,146; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 5 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv Error:8.451408701929424E-7 Segs: 0.261
+37966; 2016-08-08 15:15:18,148; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 5 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv prediction: 0 actual: 1
+37968; 2016-08-08 15:15:18,150; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 5 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv  Network traiined to error: 0.042891616402289744
+37980; 2016-08-08 15:15:18,162; [DefaultQuartzScheduler_Worker-1]; ERROR; com.botito.neural.propagation.ForexNeural; ; - Dia: 4 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv Started.
+38170; 2016-08-08 15:15:18,352; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 4 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv Error:8.451408701929424E-7 Segs: 0.19
+38171; 2016-08-08 15:15:18,353; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 4 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv prediction: 0 actual: 0
+38171; 2016-08-08 15:15:18,353; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 4 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv  Network traiined to error: 4.4476532709962574E-10
+38171; 2016-08-08 15:15:18,353; [DefaultQuartzScheduler_Worker-1]; ERROR; com.botito.neural.propagation.ForexNeural; ; - Dia: 3 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv Started.
+38376; 2016-08-08 15:15:18,558; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 3 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv Error:8.451408701929424E-7 Segs: 0.205
+38378; 2016-08-08 15:15:18,560; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 3 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv prediction: 1 actual: 0
+38379; 2016-08-08 15:15:18,561; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 3 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv  Network traiined to error: 0.9125279474072416
+38379; 2016-08-08 15:15:18,561; [DefaultQuartzScheduler_Worker-1]; ERROR; com.botito.neural.propagation.ForexNeural; ; - Dia: 2 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv Started.
+38795; 2016-08-08 15:15:18,977; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 2 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv Error:8.451408701929424E-7 Segs: 0.416
+38796; 2016-08-08 15:15:18,978; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 2 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv prediction: 0 actual: 0
+38796; 2016-08-08 15:15:18,978; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 2 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv  Network traiined to error: 0.029174403632699006
+38797; 2016-08-08 15:15:18,979; [DefaultQuartzScheduler_Worker-1]; ERROR; com.botito.neural.propagation.ForexNeural; ; - Dia: 1 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv Started.
+38971; 2016-08-08 15:15:19,153; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 1 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv Error:8.451408701929424E-7 Segs: 0.174
+38976; 2016-08-08 15:15:19,158; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 1 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv prediction: 1 actual: 1
+38978; 2016-08-08 15:15:19,160; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 1 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv  Network traiined to error: 0.049702614142717434
+38978; 2016-08-08 15:15:19,160; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Order discarded by error: 0.049702614142717434
+38978; 2016-08-08 15:15:19,160; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - ********************************************************
+38978; 2016-08-08 15:15:19,160; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Archive: GBPJPY-1440-2016-8-2-0-00-00.csv prob: 50.0% efec. win: -2.4312142857142867 Gross win: 10.988928571428557 Gross lose: 13.420142857142844 cant: 4 8
+38985; 2016-08-08 15:15:19,167; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - ********************************************************0
+39820; 2016-08-08 15:15:20,002; [DefaultQuartzScheduler_Worker-5]; INFO; com.botito.neural.propagation.ForexNeural; ; - Date: Mon Aug 08 15:15:20 ART 2016 Reading files...
+42345; 2016-08-08 15:15:22,527; [DefaultQuartzScheduler_Worker-2]; INFO; com.botito.neural.propagation.ForexNeural; ; - Learn!!! Dia: 15 Epoch #90 Archive: NASDAQ100-1440.csv Error:8.938660037788188E-7 Segs: 32.513
+42348; 2016-08-08 15:15:22,530; [DefaultQuartzScheduler_Worker-2]; INFO; com.botito.neural.propagation.ForexNeural; ; - Learn!!! Dia: 15 Archive: NASDAQ100-1440.csv Try to predict: 0 1 discarded by error 0.6045838459980225
+42349; 2016-08-08 15:15:22,531; [DefaultQuartzScheduler_Worker-2]; INFO; com.botito.neural.propagation.ForexNeural; ; - Learn!!! Dia: 14 Archive: NASDAQ100-1440.csv prediction: 0 actual: 0
+42350; 2016-08-08 15:15:22,532; [DefaultQuartzScheduler_Worker-2]; INFO; com.botito.neural.propagation.ForexNeural; ; - Learn!!! Dia: 14 Archive: NASDAQ100-1440.csv  Network traiined to error: 0.005624224776933227
+42350; 2016-08-08 15:15:22,532; [DefaultQuartzScheduler_Worker-2]; INFO; com.botito.neural.propagation.ForexNeural; ; - Learn!!! Dia: 13 Archive: NASDAQ100-1440.csv prediction: 1 actual: 1
+42351; 2016-08-08 15:15:22,533; [DefaultQuartzScheduler_Worker-2]; INFO; com.botito.neural.propagation.ForexNeural; ; - Learn!!! Dia: 13 Archive: NASDAQ100-1440.csv  Network traiined to error: 0.11562772556734562
+42351; 2016-08-08 15:15:22,533; [DefaultQuartzScheduler_Worker-2]; INFO; com.botito.neural.propagation.ForexNeural; ; - Learn!!! Dia: 12 Archive: NASDAQ100-1440.csv Try to predict: 0 1 discarded by error 0.978083575976439
+42352; 2016-08-08 15:15:22,534; [DefaultQuartzScheduler_Worker-2]; INFO; com.botito.neural.propagation.ForexNeural; ; - Learn!!! Dia: 11 Archive: NASDAQ100-1440.csv Try to predict: 0 1 discarded by error 0.9558195744146168
+42352; 2016-08-08 15:15:22,534; [DefaultQuartzScheduler_Worker-2]; INFO; com.botito.neural.propagation.ForexNeural; ; - ********************************************************
+42352; 2016-08-08 15:15:22,534; [DefaultQuartzScheduler_Worker-2]; INFO; com.botito.neural.propagation.ForexNeural; ; - Learn!!! Archive: NASDAQ100-1440.csv prob: 100.0% efec. win: 140.64285714285714 Gross win: 140.64285714285714 Gross lose: 0.0 cant: 2 2
+42352; 2016-08-08 15:15:22,534; [DefaultQuartzScheduler_Worker-2]; INFO; com.botito.neural.propagation.ForexNeural; ; - ********************************************************1
+42352; 2016-08-08 15:15:22,534; [DefaultQuartzScheduler_Worker-2]; ERROR; com.botito.neural.propagation.ForexNeural; ; - Dia: 10 Archive: NASDAQ100-1440.csv Started.
+42462; 2016-08-08 15:15:22,644; [DefaultQuartzScheduler_Worker-2]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 10 Archive: NASDAQ100-1440.csv Error:8.938660037788188E-7 Segs: 0.11
+42463; 2016-08-08 15:15:22,645; [DefaultQuartzScheduler_Worker-2]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 10 Archive: NASDAQ100-1440.csv prediction: 1 actual: 1
+42464; 2016-08-08 15:15:22,646; [DefaultQuartzScheduler_Worker-2]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 10 Archive: NASDAQ100-1440.csv  Network traiined to error: 0.8088184330849761
+42464; 2016-08-08 15:15:22,646; [DefaultQuartzScheduler_Worker-2]; ERROR; com.botito.neural.propagation.ForexNeural; ; - Dia: 9 Archive: NASDAQ100-1440.csv Started.
+42517; 2016-08-08 15:15:22,699; [DefaultQuartzScheduler_Worker-2]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 9 Archive: NASDAQ100-1440.csv Error:8.938660037788188E-7 Segs: 0.053
+42519; 2016-08-08 15:15:22,701; [DefaultQuartzScheduler_Worker-2]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 9 Archive: NASDAQ100-1440.csv prediction: 1 actual: 1
+42519; 2016-08-08 15:15:22,701; [DefaultQuartzScheduler_Worker-2]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 9 Archive: NASDAQ100-1440.csv  Network traiined to error: 0.2913698782070811
+42519; 2016-08-08 15:15:22,701; [DefaultQuartzScheduler_Worker-2]; ERROR; com.botito.neural.propagation.ForexNeural; ; - Dia: 8 Archive: NASDAQ100-1440.csv Started.
+42609; 2016-08-08 15:15:22,791; [DefaultQuartzScheduler_Worker-2]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 8 Archive: NASDAQ100-1440.csv Error:8.938660037788188E-7 Segs: 0.09
+42610; 2016-08-08 15:15:22,792; [DefaultQuartzScheduler_Worker-2]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 8 Archive: NASDAQ100-1440.csv prediction: 1 actual: 0
+42614; 2016-08-08 15:15:22,796; [DefaultQuartzScheduler_Worker-2]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 8 Archive: NASDAQ100-1440.csv  Network traiined to error: 0.7579060086992812
+42615; 2016-08-08 15:15:22,797; [DefaultQuartzScheduler_Worker-2]; ERROR; com.botito.neural.propagation.ForexNeural; ; - Dia: 7 Archive: NASDAQ100-1440.csv Started.
+42946; 2016-08-08 15:15:23,128; [DefaultQuartzScheduler_Worker-2]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 7 Archive: NASDAQ100-1440.csv Error:8.938660037788188E-7 Segs: 0.331
+42953; 2016-08-08 15:15:23,135; [DefaultQuartzScheduler_Worker-2]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 7 Archive: NASDAQ100-1440.csv prediction: 1 actual: 1
+42954; 2016-08-08 15:15:23,136; [DefaultQuartzScheduler_Worker-2]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 7 Archive: NASDAQ100-1440.csv  Network traiined to error: 0.9773669490956928
+42954; 2016-08-08 15:15:23,136; [DefaultQuartzScheduler_Worker-2]; ERROR; com.botito.neural.propagation.ForexNeural; ; - Dia: 6 Archive: NASDAQ100-1440.csv Started.
+43171; 2016-08-08 15:15:23,353; [DefaultQuartzScheduler_Worker-2]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 6 Archive: NASDAQ100-1440.csv Error:8.938660037788188E-7 Segs: 0.209
+43173; 2016-08-08 15:15:23,355; [DefaultQuartzScheduler_Worker-2]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 6 Archive: NASDAQ100-1440.csv prediction: 0 actual: 0
+43173; 2016-08-08 15:15:23,355; [DefaultQuartzScheduler_Worker-2]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 6 Archive: NASDAQ100-1440.csv  Network traiined to error: 0.13044064464634736
+43173; 2016-08-08 15:15:23,355; [DefaultQuartzScheduler_Worker-2]; ERROR; com.botito.neural.propagation.ForexNeural; ; - Dia: 5 Archive: NASDAQ100-1440.csv Started.
+43370; 2016-08-08 15:15:23,552; [DefaultQuartzScheduler_Worker-2]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 5 Archive: NASDAQ100-1440.csv Error:8.938660037788188E-7 Segs: 0.197
+43371; 2016-08-08 15:15:23,553; [DefaultQuartzScheduler_Worker-2]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 5 Archive: NASDAQ100-1440.csv prediction: 0 actual: 1
+43371; 2016-08-08 15:15:23,553; [DefaultQuartzScheduler_Worker-2]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 5 Archive: NASDAQ100-1440.csv  Network traiined to error: 1.0175543947425563E-4
+43372; 2016-08-08 15:15:23,554; [DefaultQuartzScheduler_Worker-2]; ERROR; com.botito.neural.propagation.ForexNeural; ; - Dia: 4 Archive: NASDAQ100-1440.csv Started.
+43464; 2016-08-08 15:15:23,646; [DefaultQuartzScheduler_Worker-2]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 4 Archive: NASDAQ100-1440.csv Error:8.938660037788188E-7 Segs: 0.092
+43486; 2016-08-08 15:15:23,668; [DefaultQuartzScheduler_Worker-2]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 4 Archive: NASDAQ100-1440.csv prediction: 0 actual: 0
+43486; 2016-08-08 15:15:23,668; [DefaultQuartzScheduler_Worker-2]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 4 Archive: NASDAQ100-1440.csv  Network traiined to error: 0.05961585978522841
+43488; 2016-08-08 15:15:23,670; [DefaultQuartzScheduler_Worker-2]; ERROR; com.botito.neural.propagation.ForexNeural; ; - Dia: 3 Archive: NASDAQ100-1440.csv Started.
+43629; 2016-08-08 15:15:23,811; [DefaultQuartzScheduler_Worker-2]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 3 Archive: NASDAQ100-1440.csv Error:8.938660037788188E-7 Segs: 0.141
+43630; 2016-08-08 15:15:23,812; [DefaultQuartzScheduler_Worker-2]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 3 Archive: NASDAQ100-1440.csv prediction: 0 actual: 1
+43630; 2016-08-08 15:15:23,812; [DefaultQuartzScheduler_Worker-2]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 3 Archive: NASDAQ100-1440.csv  Network traiined to error: 7.621491546984352E-4
+43630; 2016-08-08 15:15:23,812; [DefaultQuartzScheduler_Worker-2]; ERROR; com.botito.neural.propagation.ForexNeural; ; - Dia: 2 Archive: NASDAQ100-1440.csv Started.
+43690; 2016-08-08 15:15:23,872; [DefaultQuartzScheduler_Worker-2]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 2 Archive: NASDAQ100-1440.csv Error:8.938660037788188E-7 Segs: 0.059
+43691; 2016-08-08 15:15:23,873; [DefaultQuartzScheduler_Worker-2]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 2 Archive: NASDAQ100-1440.csv prediction: 0 actual: 0
+43692; 2016-08-08 15:15:23,874; [DefaultQuartzScheduler_Worker-2]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 2 Archive: NASDAQ100-1440.csv  Network traiined to error: 0.12280922447022598
+43692; 2016-08-08 15:15:23,874; [DefaultQuartzScheduler_Worker-2]; ERROR; com.botito.neural.propagation.ForexNeural; ; - Dia: 1 Archive: NASDAQ100-1440.csv Started.
+43743; 2016-08-08 15:15:23,925; [DefaultQuartzScheduler_Worker-2]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 1 Archive: NASDAQ100-1440.csv Error:8.938660037788188E-7 Segs: 0.051
+43744; 2016-08-08 15:15:23,926; [DefaultQuartzScheduler_Worker-2]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 1 Archive: NASDAQ100-1440.csv prediction: 1 actual: 1
+43744; 2016-08-08 15:15:23,926; [DefaultQuartzScheduler_Worker-2]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 1 Archive: NASDAQ100-1440.csv  Network traiined to error: 0.06556941080765297
+43744; 2016-08-08 15:15:23,926; [DefaultQuartzScheduler_Worker-2]; INFO; com.botito.neural.propagation.ForexNeural; ; - ********************************************************
+43745; 2016-08-08 15:15:23,927; [DefaultQuartzScheduler_Worker-2]; INFO; com.botito.neural.propagation.ForexNeural; ; - Archive: NASDAQ100-1440.csv prob: 66.66666666666666% efec. win: 151.7321428571429 Gross win: 289.4464285714286 Gross lose: 137.71428571428572 cant: 6 9
+43745; 2016-08-08 15:15:23,927; [DefaultQuartzScheduler_Worker-2]; INFO; com.botito.neural.propagation.ForexNeural; ; - ********************************************************0
+43745; 2016-08-08 15:15:23,927; [DefaultQuartzScheduler_Worker-2]; ERROR; com.botito.neural.propagation.ForexNeural; ; - Dia: 10 Archive: NASDAQ100-1440.csv Started.
+43797; 2016-08-08 15:15:23,979; [DefaultQuartzScheduler_Worker-2]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 10 Archive: NASDAQ100-1440.csv Error:8.938660037788188E-7 Segs: 0.052
+43798; 2016-08-08 15:15:23,980; [DefaultQuartzScheduler_Worker-2]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 10 Archive: NASDAQ100-1440.csv prediction: 1 actual: 1
+43798; 2016-08-08 15:15:23,980; [DefaultQuartzScheduler_Worker-2]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 10 Archive: NASDAQ100-1440.csv  Network traiined to error: 0.8088184330849761
+43799; 2016-08-08 15:15:23,981; [DefaultQuartzScheduler_Worker-2]; ERROR; com.botito.neural.propagation.ForexNeural; ; - Dia: 9 Archive: NASDAQ100-1440.csv Started.
+43858; 2016-08-08 15:15:24,040; [DefaultQuartzScheduler_Worker-2]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 9 Archive: NASDAQ100-1440.csv Error:8.938660037788188E-7 Segs: 0.059
+43859; 2016-08-08 15:15:24,041; [DefaultQuartzScheduler_Worker-2]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 9 Archive: NASDAQ100-1440.csv prediction: 1 actual: 1
+43860; 2016-08-08 15:15:24,042; [DefaultQuartzScheduler_Worker-2]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 9 Archive: NASDAQ100-1440.csv  Network traiined to error: 0.2913698782070811
+43860; 2016-08-08 15:15:24,042; [DefaultQuartzScheduler_Worker-2]; ERROR; com.botito.neural.propagation.ForexNeural; ; - Dia: 8 Archive: NASDAQ100-1440.csv Started.
+43922; 2016-08-08 15:15:24,104; [DefaultQuartzScheduler_Worker-2]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 8 Archive: NASDAQ100-1440.csv Error:8.938660037788188E-7 Segs: 0.062
+43923; 2016-08-08 15:15:24,105; [DefaultQuartzScheduler_Worker-2]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 8 Archive: NASDAQ100-1440.csv prediction: 1 actual: 0
+43923; 2016-08-08 15:15:24,105; [DefaultQuartzScheduler_Worker-2]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 8 Archive: NASDAQ100-1440.csv  Network traiined to error: 0.7579060086992812
+43923; 2016-08-08 15:15:24,105; [DefaultQuartzScheduler_Worker-2]; ERROR; com.botito.neural.propagation.ForexNeural; ; - Dia: 7 Archive: NASDAQ100-1440.csv Started.
+43971; 2016-08-08 15:15:24,153; [DefaultQuartzScheduler_Worker-2]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 7 Archive: NASDAQ100-1440.csv Error:8.938660037788188E-7 Segs: 0.048
+43971; 2016-08-08 15:15:24,153; [DefaultQuartzScheduler_Worker-2]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 7 Archive: NASDAQ100-1440.csv prediction: 1 actual: 1
+43971; 2016-08-08 15:15:24,153; [DefaultQuartzScheduler_Worker-2]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 7 Archive: NASDAQ100-1440.csv  Network traiined to error: 0.9773669490956928
+43972; 2016-08-08 15:15:24,154; [DefaultQuartzScheduler_Worker-2]; ERROR; com.botito.neural.propagation.ForexNeural; ; - Dia: 6 Archive: NASDAQ100-1440.csv Started.
+44033; 2016-08-08 15:15:24,215; [DefaultQuartzScheduler_Worker-2]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 6 Archive: NASDAQ100-1440.csv Error:8.938660037788188E-7 Segs: 0.058
+44037; 2016-08-08 15:15:24,219; [DefaultQuartzScheduler_Worker-2]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 6 Archive: NASDAQ100-1440.csv prediction: 0 actual: 0
+44038; 2016-08-08 15:15:24,220; [DefaultQuartzScheduler_Worker-2]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 6 Archive: NASDAQ100-1440.csv  Network traiined to error: 0.13044064464634736
+44038; 2016-08-08 15:15:24,220; [DefaultQuartzScheduler_Worker-2]; ERROR; com.botito.neural.propagation.ForexNeural; ; - Dia: 5 Archive: NASDAQ100-1440.csv Started.
+44098; 2016-08-08 15:15:24,280; [DefaultQuartzScheduler_Worker-2]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 5 Archive: NASDAQ100-1440.csv Error:8.938660037788188E-7 Segs: 0.06
+44099; 2016-08-08 15:15:24,281; [DefaultQuartzScheduler_Worker-2]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 5 Archive: NASDAQ100-1440.csv prediction: 0 actual: 1
+44099; 2016-08-08 15:15:24,281; [DefaultQuartzScheduler_Worker-2]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 5 Archive: NASDAQ100-1440.csv  Network traiined to error: 1.0175543947425563E-4
+44101; 2016-08-08 15:15:24,283; [DefaultQuartzScheduler_Worker-2]; ERROR; com.botito.neural.propagation.ForexNeural; ; - Dia: 4 Archive: NASDAQ100-1440.csv Started.
+44149; 2016-08-08 15:15:24,331; [DefaultQuartzScheduler_Worker-2]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 4 Archive: NASDAQ100-1440.csv Error:8.938660037788188E-7 Segs: 0.048
+44150; 2016-08-08 15:15:24,332; [DefaultQuartzScheduler_Worker-2]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 4 Archive: NASDAQ100-1440.csv prediction: 0 actual: 0
+44150; 2016-08-08 15:15:24,332; [DefaultQuartzScheduler_Worker-2]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 4 Archive: NASDAQ100-1440.csv  Network traiined to error: 0.05961585978522841
+44150; 2016-08-08 15:15:24,332; [DefaultQuartzScheduler_Worker-2]; ERROR; com.botito.neural.propagation.ForexNeural; ; - Dia: 3 Archive: NASDAQ100-1440.csv Started.
+44198; 2016-08-08 15:15:24,380; [DefaultQuartzScheduler_Worker-2]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 3 Archive: NASDAQ100-1440.csv Error:8.938660037788188E-7 Segs: 0.048
+44199; 2016-08-08 15:15:24,381; [DefaultQuartzScheduler_Worker-2]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 3 Archive: NASDAQ100-1440.csv prediction: 0 actual: 1
+44199; 2016-08-08 15:15:24,381; [DefaultQuartzScheduler_Worker-2]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 3 Archive: NASDAQ100-1440.csv  Network traiined to error: 7.621491546984352E-4
+44202; 2016-08-08 15:15:24,384; [DefaultQuartzScheduler_Worker-2]; ERROR; com.botito.neural.propagation.ForexNeural; ; - Dia: 2 Archive: NASDAQ100-1440.csv Started.
+44272; 2016-08-08 15:15:24,454; [DefaultQuartzScheduler_Worker-2]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 2 Archive: NASDAQ100-1440.csv Error:8.938660037788188E-7 Segs: 0.07
+44291; 2016-08-08 15:15:24,473; [DefaultQuartzScheduler_Worker-2]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 2 Archive: NASDAQ100-1440.csv prediction: 0 actual: 0
+44291; 2016-08-08 15:15:24,473; [DefaultQuartzScheduler_Worker-2]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 2 Archive: NASDAQ100-1440.csv  Network traiined to error: 0.12280922447022598
+44292; 2016-08-08 15:15:24,474; [DefaultQuartzScheduler_Worker-2]; ERROR; com.botito.neural.propagation.ForexNeural; ; - Dia: 1 Archive: NASDAQ100-1440.csv Started.
+44390; 2016-08-08 15:15:24,572; [DefaultQuartzScheduler_Worker-2]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 1 Archive: NASDAQ100-1440.csv Error:8.938660037788188E-7 Segs: 0.098
+44391; 2016-08-08 15:15:24,573; [DefaultQuartzScheduler_Worker-2]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 1 Archive: NASDAQ100-1440.csv prediction: 1 actual: 1
+44392; 2016-08-08 15:15:24,574; [DefaultQuartzScheduler_Worker-2]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 1 Archive: NASDAQ100-1440.csv  Network traiined to error: 0.06556941080765297
+44548; 2016-08-08 15:15:24,730; [DefaultQuartzScheduler_Worker-2]; INFO; com.botito.neural.propagation.ForexNeural; ; - ********************************************************
+44548; 2016-08-08 15:15:24,730; [DefaultQuartzScheduler_Worker-2]; INFO; com.botito.neural.propagation.ForexNeural; ; - Archive: NASDAQ100-1440.csv prob: 66.66666666666666% efec. win: 151.7321428571429 Gross win: 289.4464285714286 Gross lose: 137.71428571428572 cant: 6 9
+44548; 2016-08-08 15:15:24,730; [DefaultQuartzScheduler_Worker-2]; INFO; com.botito.neural.propagation.ForexNeural; ; - ********************************************************0
+44874; 2016-08-08 15:15:25,056; [DefaultQuartzScheduler_Worker-2]; INFO; com.botito.neural.propagation.ForexNeural; ; - +++++++++++++++++++++++++++++++++++
+44874; 2016-08-08 15:15:25,056; [DefaultQuartzScheduler_Worker-2]; INFO; com.botito.neural.propagation.ForexNeural; ; - Shutdown Encog.
+44874; 2016-08-08 15:15:25,056; [DefaultQuartzScheduler_Worker-2]; INFO; com.botito.neural.propagation.ForexNeural; ; - +++++++++++++++++++++++++++++++++++
+49821; 2016-08-08 15:15:30,003; [DefaultQuartzScheduler_Worker-6]; INFO; com.botito.neural.propagation.ForexNeural; ; - Date: Mon Aug 08 15:15:30 ART 2016 Reading files...
+59823; 2016-08-08 15:15:40,005; [DefaultQuartzScheduler_Worker-7]; INFO; com.botito.neural.propagation.ForexNeural; ; - Date: Mon Aug 08 15:15:40 ART 2016 Reading files...
+69820; 2016-08-08 15:15:50,002; [DefaultQuartzScheduler_Worker-8]; INFO; com.botito.neural.propagation.ForexNeural; ; - Date: Mon Aug 08 15:15:50 ART 2016 Reading files...
+79822; 2016-08-08 15:16:00,004; [DefaultQuartzScheduler_Worker-9]; INFO; com.botito.neural.propagation.ForexNeural; ; - Date: Mon Aug 08 15:16:00 ART 2016 Reading files...
+89819; 2016-08-08 15:16:10,001; [DefaultQuartzScheduler_Worker-10]; INFO; com.botito.neural.propagation.ForexNeural; ; - Date: Mon Aug 08 15:16:10 ART 2016 Reading files...
+0; 2016-08-08 15:17:40,315; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Date: Mon Aug 08 15:17:40 ART 2016 Reading files...
+3; 2016-08-08 15:17:40,318; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Processing file: GBPJPY-1440-2016-8-2-0-00-00.csv
+109; 2016-08-08 15:17:40,424; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Thinking file: GBPJPY-1440-2016-8-2-0-00-00.csv
+9687; 2016-08-08 15:17:50,002; [DefaultQuartzScheduler_Worker-2]; INFO; com.botito.neural.propagation.ForexNeural; ; - Date: Mon Aug 08 15:17:50 ART 2016 Reading files...
+19688; 2016-08-08 15:18:00,003; [DefaultQuartzScheduler_Worker-3]; INFO; com.botito.neural.propagation.ForexNeural; ; - Date: Mon Aug 08 15:18:00 ART 2016 Reading files...
+21793; 2016-08-08 15:18:02,108; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Learn!!! Dia: 14 Epoch #118 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv Error:9.019636724852743E-7 Segs: 21.683
+21823; 2016-08-08 15:18:02,138; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Learn!!! Dia: 14 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv Try to predict: 1 1 discarded by error 0.21808942037405227
+21823; 2016-08-08 15:18:02,138; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Learn!!! Dia: 13 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv Try to predict: 1 0 discarded by error 0.7240186254960813
+21824; 2016-08-08 15:18:02,139; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Learn!!! Dia: 12 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv prediction: 1 actual: 1
+21824; 2016-08-08 15:18:02,139; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Learn!!! Dia: 12 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv  Network traiined to error: 0.030782979949640348
+21825; 2016-08-08 15:18:02,140; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Learn!!! Dia: 11 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv prediction: 0 actual: 0
+21825; 2016-08-08 15:18:02,140; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Learn!!! Dia: 11 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv  Network traiined to error: 0.001012538376650514
+21826; 2016-08-08 15:18:02,141; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Learn!!! Dia: 10 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv prediction: 1 actual: 1
+21826; 2016-08-08 15:18:02,141; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Learn!!! Dia: 10 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv  Network traiined to error: 0.1697111820321578
+21827; 2016-08-08 15:18:02,142; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - ********************************************************
+21827; 2016-08-08 15:18:02,142; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Learn!!! Archive: GBPJPY-1440-2016-8-2-0-00-00.csv prob: 100.0% efec. win: 10.19464285714285 Gross win: 10.19464285714285 Gross lose: 0.0 cant: 3 3
+21827; 2016-08-08 15:18:02,142; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - ********************************************************1
+21827; 2016-08-08 15:18:02,142; [DefaultQuartzScheduler_Worker-1]; ERROR; com.botito.neural.propagation.ForexNeural; ; - Dia: 9 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv Started.
+22066; 2016-08-08 15:18:02,381; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 9 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv Error:9.019636724852743E-7 Segs: 0.238
+22067; 2016-08-08 15:18:02,382; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 9 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv prediction: 1 actual: 0
+22067; 2016-08-08 15:18:02,382; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 9 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv  Network traiined to error: 0.9639008080005992
+22067; 2016-08-08 15:18:02,382; [DefaultQuartzScheduler_Worker-1]; ERROR; com.botito.neural.propagation.ForexNeural; ; - Dia: 8 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv Started.
+22276; 2016-08-08 15:18:02,591; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 8 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv Error:9.019636724852743E-7 Segs: 0.209
+22278; 2016-08-08 15:18:02,593; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 8 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv prediction: 1 actual: 0
+22278; 2016-08-08 15:18:02,593; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 8 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv  Network traiined to error: 0.2644887014291435
+22278; 2016-08-08 15:18:02,593; [DefaultQuartzScheduler_Worker-1]; ERROR; com.botito.neural.propagation.ForexNeural; ; - Dia: 7 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv Started.
+22520; 2016-08-08 15:18:02,835; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 7 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv Error:9.019636724852743E-7 Segs: 0.241
+22521; 2016-08-08 15:18:02,836; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 7 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv prediction: 1 actual: 0
+22521; 2016-08-08 15:18:02,836; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 7 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv  Network traiined to error: 0.2566527945490633
+22521; 2016-08-08 15:18:02,836; [DefaultQuartzScheduler_Worker-1]; ERROR; com.botito.neural.propagation.ForexNeural; ; - Dia: 6 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv Started.
+22678; 2016-08-08 15:18:02,993; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 6 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv Error:9.019636724852743E-7 Segs: 0.157
+22679; 2016-08-08 15:18:02,994; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 6 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv prediction: 0 actual: 0
+22680; 2016-08-08 15:18:02,995; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 6 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv  Network traiined to error: 0.03922917800778655
+22680; 2016-08-08 15:18:02,995; [DefaultQuartzScheduler_Worker-1]; ERROR; com.botito.neural.propagation.ForexNeural; ; - Dia: 5 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv Started.
+22761; 2016-08-08 15:18:03,076; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 5 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv Error:9.019636724852743E-7 Segs: 0.081
+22762; 2016-08-08 15:18:03,077; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 5 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv prediction: 0 actual: 1
+22762; 2016-08-08 15:18:03,077; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 5 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv  Network traiined to error: 7.295842299748242E-4
+22763; 2016-08-08 15:18:03,078; [DefaultQuartzScheduler_Worker-1]; ERROR; com.botito.neural.propagation.ForexNeural; ; - Dia: 4 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv Started.
+22950; 2016-08-08 15:18:03,265; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 4 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv Error:9.019636724852743E-7 Segs: 0.187
+22951; 2016-08-08 15:18:03,266; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 4 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv prediction: 1 actual: 0
+22972; 2016-08-08 15:18:03,287; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 4 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv  Network traiined to error: 0.9838112198687374
+22972; 2016-08-08 15:18:03,287; [DefaultQuartzScheduler_Worker-1]; ERROR; com.botito.neural.propagation.ForexNeural; ; - Dia: 3 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv Started.
+23134; 2016-08-08 15:18:03,449; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 3 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv Error:9.019636724852743E-7 Segs: 0.162
+23135; 2016-08-08 15:18:03,450; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 3 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv prediction: 1 actual: 0
+23135; 2016-08-08 15:18:03,450; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 3 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv  Network traiined to error: 0.5938381652557502
+23135; 2016-08-08 15:18:03,450; [DefaultQuartzScheduler_Worker-1]; ERROR; com.botito.neural.propagation.ForexNeural; ; - Dia: 2 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv Started.
+23247; 2016-08-08 15:18:03,562; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 2 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv Error:9.019636724852743E-7 Segs: 0.112
+23248; 2016-08-08 15:18:03,563; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 2 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv prediction: 0 actual: 0
+23248; 2016-08-08 15:18:03,563; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 2 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv  Network traiined to error: 2.3365843641075935E-8
+23249; 2016-08-08 15:18:03,564; [DefaultQuartzScheduler_Worker-1]; ERROR; com.botito.neural.propagation.ForexNeural; ; - Dia: 1 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv Started.
+23342; 2016-08-08 15:18:03,657; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 1 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv Error:9.019636724852743E-7 Segs: 0.093
+23343; 2016-08-08 15:18:03,658; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 1 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv prediction: 1 actual: 1
+23343; 2016-08-08 15:18:03,658; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 1 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv  Network traiined to error: 9.049528717109942E-10
+23343; 2016-08-08 15:18:03,658; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - ********************************************************
+23343; 2016-08-08 15:18:03,658; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Archive: GBPJPY-1440-2016-8-2-0-00-00.csv prob: 25.0% efec. win: -11.831214285714275 Gross win: 6.288928571428563 Gross lose: 18.120142857142838 cant: 2 8
+23343; 2016-08-08 15:18:03,658; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - ********************************************************0
+29689; 2016-08-08 15:18:10,004; [DefaultQuartzScheduler_Worker-4]; INFO; com.botito.neural.propagation.ForexNeural; ; - Date: Mon Aug 08 15:18:10 ART 2016 Reading files...
+39692; 2016-08-08 15:18:20,007; [DefaultQuartzScheduler_Worker-5]; INFO; com.botito.neural.propagation.ForexNeural; ; - Date: Mon Aug 08 15:18:20 ART 2016 Reading files...
+41275; 2016-08-08 15:18:21,590; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Learn!!! Dia: 14 Epoch #124 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv Error:9.691071367328512E-7 Segs: 17.932
+41276; 2016-08-08 15:18:21,591; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Learn!!! Dia: 14 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv prediction: 1 actual: 1
+41276; 2016-08-08 15:18:21,591; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Learn!!! Dia: 14 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv  Network traiined to error: 0.020576626704466094
+41277; 2016-08-08 15:18:21,592; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Learn!!! Dia: 13 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv Try to predict: 1 0 discarded by error 0.957851985082883
+41278; 2016-08-08 15:18:21,593; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Learn!!! Dia: 12 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv Try to predict: 1 1 discarded by error 0.24733354468022206
+41279; 2016-08-08 15:18:21,594; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Learn!!! Dia: 11 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv Try to predict: 1 0 discarded by error 0.8058518653050655
+41279; 2016-08-08 15:18:21,594; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Learn!!! Dia: 10 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv Try to predict: 0 1 discarded by error 0.7751495335116444
+41279; 2016-08-08 15:18:21,594; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - ********************************************************
+41280; 2016-08-08 15:18:21,595; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Learn!!! Archive: GBPJPY-1440-2016-8-2-0-00-00.csv prob: 100.0% efec. win: 3.398214285714283 Gross win: 3.398214285714283 Gross lose: 0.0 cant: 1 1
+41280; 2016-08-08 15:18:21,595; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - ********************************************************1
+41280; 2016-08-08 15:18:21,595; [DefaultQuartzScheduler_Worker-1]; ERROR; com.botito.neural.propagation.ForexNeural; ; - Dia: 9 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv Started.
+41363; 2016-08-08 15:18:21,678; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 9 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv Error:9.691071367328512E-7 Segs: 0.083
+41364; 2016-08-08 15:18:21,679; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 9 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv prediction: 0 actual: 0
+41364; 2016-08-08 15:18:21,679; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 9 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv  Network traiined to error: 0.10033798566953558
+41366; 2016-08-08 15:18:21,681; [DefaultQuartzScheduler_Worker-1]; ERROR; com.botito.neural.propagation.ForexNeural; ; - Dia: 8 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv Started.
+41512; 2016-08-08 15:18:21,827; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 8 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv Error:9.691071367328512E-7 Segs: 0.146
+41513; 2016-08-08 15:18:21,828; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 8 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv prediction: 0 actual: 0
+41513; 2016-08-08 15:18:21,828; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 8 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv  Network traiined to error: 0.03019437433618996
+41513; 2016-08-08 15:18:21,828; [DefaultQuartzScheduler_Worker-1]; ERROR; com.botito.neural.propagation.ForexNeural; ; - Dia: 7 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv Started.
+41765; 2016-08-08 15:18:22,080; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 7 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv Error:9.691071367328512E-7 Segs: 0.252
+41766; 2016-08-08 15:18:22,081; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 7 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv prediction: 0 actual: 0
+41766; 2016-08-08 15:18:22,081; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 7 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv  Network traiined to error: 0.005054807468747906
+41766; 2016-08-08 15:18:22,081; [DefaultQuartzScheduler_Worker-1]; ERROR; com.botito.neural.propagation.ForexNeural; ; - Dia: 6 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv Started.
+41851; 2016-08-08 15:18:22,166; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 6 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv Error:9.691071367328512E-7 Segs: 0.085
+41852; 2016-08-08 15:18:22,167; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 6 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv prediction: 1 actual: 0
+41852; 2016-08-08 15:18:22,167; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 6 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv  Network traiined to error: 0.38433603513267317
+41852; 2016-08-08 15:18:22,167; [DefaultQuartzScheduler_Worker-1]; ERROR; com.botito.neural.propagation.ForexNeural; ; - Dia: 5 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv Started.
+41942; 2016-08-08 15:18:22,257; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 5 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv Error:9.691071367328512E-7 Segs: 0.089
+41944; 2016-08-08 15:18:22,259; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 5 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv prediction: 0 actual: 1
+41945; 2016-08-08 15:18:22,260; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 5 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv  Network traiined to error: 0.1370890327698758
+41945; 2016-08-08 15:18:22,260; [DefaultQuartzScheduler_Worker-1]; ERROR; com.botito.neural.propagation.ForexNeural; ; - Dia: 4 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv Started.
+42045; 2016-08-08 15:18:22,360; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 4 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv Error:9.691071367328512E-7 Segs: 0.1
+42046; 2016-08-08 15:18:22,361; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 4 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv prediction: 0 actual: 0
+42046; 2016-08-08 15:18:22,361; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 4 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv  Network traiined to error: 0.07951169640367668
+42046; 2016-08-08 15:18:22,361; [DefaultQuartzScheduler_Worker-1]; ERROR; com.botito.neural.propagation.ForexNeural; ; - Dia: 3 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv Started.
+42124; 2016-08-08 15:18:22,439; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 3 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv Error:9.691071367328512E-7 Segs: 0.078
+42124; 2016-08-08 15:18:22,439; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 3 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv prediction: 0 actual: 0
+42125; 2016-08-08 15:18:22,440; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 3 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv  Network traiined to error: 0.03428668747286302
+42125; 2016-08-08 15:18:22,440; [DefaultQuartzScheduler_Worker-1]; ERROR; com.botito.neural.propagation.ForexNeural; ; - Dia: 2 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv Started.
+42262; 2016-08-08 15:18:22,577; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 2 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv Error:9.691071367328512E-7 Segs: 0.137
+42264; 2016-08-08 15:18:22,579; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 2 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv prediction: 0 actual: 0
+42264; 2016-08-08 15:18:22,579; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 2 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv  Network traiined to error: 0.19142725264016403
+42264; 2016-08-08 15:18:22,579; [DefaultQuartzScheduler_Worker-1]; ERROR; com.botito.neural.propagation.ForexNeural; ; - Dia: 1 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv Started.
+42345; 2016-08-08 15:18:22,660; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 1 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv Error:9.691071367328512E-7 Segs: 0.081
+42346; 2016-08-08 15:18:22,661; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 1 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv prediction: 1 actual: 1
+42346; 2016-08-08 15:18:22,661; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 1 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv  Network traiined to error: 3.1413096337598046E-6
+42346; 2016-08-08 15:18:22,661; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - ********************************************************
+42346; 2016-08-08 15:18:22,661; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Archive: GBPJPY-1440-2016-8-2-0-00-00.csv prob: 75.0% efec. win: 11.35721428571427 Gross win: 17.883142857142836 Gross lose: 6.525928571428565 cant: 6 8
+42346; 2016-08-08 15:18:22,661; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - ********************************************************0
+42346; 2016-08-08 15:18:22,661; [DefaultQuartzScheduler_Worker-1]; ERROR; com.botito.neural.propagation.ForexNeural; ; - Dia: 9 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv Started.
+42424; 2016-08-08 15:18:22,739; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 9 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv Error:9.691071367328512E-7 Segs: 0.078
+42425; 2016-08-08 15:18:22,740; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 9 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv prediction: 0 actual: 0
+42425; 2016-08-08 15:18:22,740; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 9 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv  Network traiined to error: 0.10033798566953558
+42425; 2016-08-08 15:18:22,740; [DefaultQuartzScheduler_Worker-1]; ERROR; com.botito.neural.propagation.ForexNeural; ; - Dia: 8 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv Started.
+42509; 2016-08-08 15:18:22,824; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 8 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv Error:9.691071367328512E-7 Segs: 0.084
+42510; 2016-08-08 15:18:22,825; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 8 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv prediction: 0 actual: 0
+42510; 2016-08-08 15:18:22,825; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 8 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv  Network traiined to error: 0.03019437433618996
+42510; 2016-08-08 15:18:22,825; [DefaultQuartzScheduler_Worker-1]; ERROR; com.botito.neural.propagation.ForexNeural; ; - Dia: 7 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv Started.
+42677; 2016-08-08 15:18:22,992; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 7 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv Error:9.691071367328512E-7 Segs: 0.167
+42681; 2016-08-08 15:18:22,996; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 7 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv prediction: 0 actual: 0
+42683; 2016-08-08 15:18:22,998; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 7 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv  Network traiined to error: 0.005054807468747906
+42683; 2016-08-08 15:18:22,998; [DefaultQuartzScheduler_Worker-1]; ERROR; com.botito.neural.propagation.ForexNeural; ; - Dia: 6 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv Started.
+42919; 2016-08-08 15:18:23,234; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 6 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv Error:9.691071367328512E-7 Segs: 0.234
+42919; 2016-08-08 15:18:23,234; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 6 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv prediction: 1 actual: 0
+42920; 2016-08-08 15:18:23,235; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 6 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv  Network traiined to error: 0.38433603513267317
+42920; 2016-08-08 15:18:23,235; [DefaultQuartzScheduler_Worker-1]; ERROR; com.botito.neural.propagation.ForexNeural; ; - Dia: 5 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv Started.
+43064; 2016-08-08 15:18:23,379; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 5 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv Error:9.691071367328512E-7 Segs: 0.144
+43066; 2016-08-08 15:18:23,381; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 5 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv prediction: 0 actual: 1
+43066; 2016-08-08 15:18:23,381; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 5 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv  Network traiined to error: 0.1370890327698758
+43068; 2016-08-08 15:18:23,383; [DefaultQuartzScheduler_Worker-1]; ERROR; com.botito.neural.propagation.ForexNeural; ; - Dia: 4 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv Started.
+43209; 2016-08-08 15:18:23,524; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 4 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv Error:9.691071367328512E-7 Segs: 0.134
+43210; 2016-08-08 15:18:23,525; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 4 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv prediction: 0 actual: 0
+43210; 2016-08-08 15:18:23,525; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 4 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv  Network traiined to error: 0.07951169640367668
+43210; 2016-08-08 15:18:23,525; [DefaultQuartzScheduler_Worker-1]; ERROR; com.botito.neural.propagation.ForexNeural; ; - Dia: 3 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv Started.
+43287; 2016-08-08 15:18:23,602; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 3 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv Error:9.691071367328512E-7 Segs: 0.077
+43287; 2016-08-08 15:18:23,602; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 3 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv prediction: 0 actual: 0
+43288; 2016-08-08 15:18:23,603; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 3 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv  Network traiined to error: 0.03428668747286302
+43288; 2016-08-08 15:18:23,603; [DefaultQuartzScheduler_Worker-1]; ERROR; com.botito.neural.propagation.ForexNeural; ; - Dia: 2 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv Started.
+43356; 2016-08-08 15:18:23,671; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 2 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv Error:9.691071367328512E-7 Segs: 0.068
+43357; 2016-08-08 15:18:23,672; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 2 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv prediction: 0 actual: 0
+43357; 2016-08-08 15:18:23,672; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 2 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv  Network traiined to error: 0.19142725264016403
+43357; 2016-08-08 15:18:23,672; [DefaultQuartzScheduler_Worker-1]; ERROR; com.botito.neural.propagation.ForexNeural; ; - Dia: 1 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv Started.
+43439; 2016-08-08 15:18:23,754; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 1 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv Error:9.691071367328512E-7 Segs: 0.082
+43441; 2016-08-08 15:18:23,756; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 1 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv prediction: 1 actual: 1
+43441; 2016-08-08 15:18:23,756; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Dia: 1 Archive: GBPJPY-1440-2016-8-2-0-00-00.csv  Network traiined to error: 3.1413096337598046E-6
+43445; 2016-08-08 15:18:23,760; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - ********************************************************
+43445; 2016-08-08 15:18:23,760; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Archive: GBPJPY-1440-2016-8-2-0-00-00.csv prob: 75.0% efec. win: 11.35721428571427 Gross win: 17.883142857142836 Gross lose: 6.525928571428565 cant: 6 8
+43445; 2016-08-08 15:18:23,760; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - ********************************************************0
+43748; 2016-08-08 15:18:24,063; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - +++++++++++++++++++++++++++++++++++
+43748; 2016-08-08 15:18:24,063; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - Shutdown Encog.
+43748; 2016-08-08 15:18:24,063; [DefaultQuartzScheduler_Worker-1]; INFO; com.botito.neural.propagation.ForexNeural; ; - +++++++++++++++++++++++++++++++++++
+49688; 2016-08-08 15:18:30,003; [DefaultQuartzScheduler_Worker-6]; INFO; com.botito.neural.propagation.ForexNeural; ; - Date: Mon Aug 08 15:18:30 ART 2016 Reading files...
+59687; 2016-08-08 15:18:40,002; [DefaultQuartzScheduler_Worker-7]; INFO; com.botito.neural.propagation.ForexNeural; ; - Date: Mon Aug 08 15:18:40 ART 2016 Reading files...
+69687; 2016-08-08 15:18:50,002; [DefaultQuartzScheduler_Worker-8]; INFO; com.botito.neural.propagation.ForexNeural; ; - Date: Mon Aug 08 15:18:50 ART 2016 Reading files...
+79688; 2016-08-08 15:19:00,003; [DefaultQuartzScheduler_Worker-9]; INFO; com.botito.neural.propagation.ForexNeural; ; - Date: Mon Aug 08 15:19:00 ART 2016 Reading files...
+89688; 2016-08-08 15:19:10,003; [DefaultQuartzScheduler_Worker-10]; INFO; com.botito.neural.propagation.ForexNeural; ; - Date: Mon Aug 08 15:19:10 ART 2016 Reading files...
+99689; 2016-08-08 15:19:20,004; [DefaultQuartzScheduler_Worker-2]; INFO; com.botito.neural.propagation.ForexNeural; ; - Date: Mon Aug 08 15:19:20 ART 2016 Reading files...

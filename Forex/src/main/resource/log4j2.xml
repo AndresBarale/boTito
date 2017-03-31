@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+    <Appenders>
+        <Console name="Console" target="SYSTEM_OUT">
+             <PatternLayout pattern="%highlight{%d{HH:mm:ss.SSS} %highlight{%d [%t] %-5level: %msg%n%throwable}{FATAL=white, ERROR=red, WARN=blue, INFO=black, DEBUG=green, TRACE=blue}"/>
+        </Console>
+        <Console name="SlowConsole" target="SYSTEM_OUT">
+             <PatternLayout pattern="%highlight{%d{HH:mm:ss.SSS} %highlight{%d [%t] %-5level: %msg%n%throwable}{FATAL=white, ERROR=red, WARN=blue, INFO=black, DEBUG=green, TRACE=blue}"/>
+        </Console>
+        <File name="File" fileName="C:\log\out.txt">
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} %-5level %logger{36} - %msg%n" />
+        </File>
+    </Appenders>
+    <Loggers>
+        <logger name="org.abc.ea.web" level="ALL" additivity="false">
+            <!--Log4j for the WEB MODULE -->
+            <appender-ref ref="SlowConsole"/>
+        </logger>
+        <logger name="org.abc.ea.ejb" level="ALL" additivity="false">
+            <!--Log4j for the EJB MODULE -->
+            <appender-ref ref="SlowConsole"/>
+        </logger>
+        <Root level="ERROR">
+            <AppenderRef ref="Console"/>
+            <AppenderRef ref="File" />
+        </Root>
+    </Loggers>
+</Configuration>
